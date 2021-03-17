@@ -1,0 +1,148 @@
+---
+id: home
+title: Markdown Homepage content 
+sidebar_label: Home
+---
+
+import Button from 'components/Button';
+import ExternalLink from 'components/ExternalLink';
+import updates from 'data/updates/updates.json';
+import JobsModule from 'components/JobsModule';
+import Wrapper from 'components/Wrapper';
+import SideBySide from 'components/SideBySide';
+import colors from 'src/css/colors.js';
+import BulletPtSection from 'components/BulletPtSection';
+
+
+export const NewsUpdates = ({ category }) => (
+    <>
+    {updates[category].map(({ link, publishedDate, description }, i) => ( 
+        <div key={`${category.slice(0, 1)}${i}`}>
+            <ExternalLink link={link} text={`${publishedDate}: ${description}`} /> 
+            <br />
+            <br />
+        </div>
+        ))}
+    </>
+)
+
+<Wrapper contained id="heading">
+
+# Security focused. Upgradable. Built to last.
+
+Tezos is an open-source platform for assets and applications backed by a global community of validators, researchers, and builders.  
+
+<Button
+    text='Access Developer Portal'
+    href='/developer-portal'/>
+<Button
+    text='Get Started'
+    href='../docs/learn/what-is-tezos'
+    inverse='True'/>
+
+</Wrapper>
+
+<Wrapper bg={colors.lightGrey} contained id="key-barriers">
+
+## _Tezos addresses key barriers facing blockchain adoption to date: smart contract safety, long-term upgradability, and open participation._
+
+</Wrapper>
+
+<Wrapper id="bullet-points-section">
+
+<BulletPtSection
+    bulletPts={[
+        {
+            heading: 'Secure, Institutional Grade Smart Contracts',
+            text: 'Tezos is designed to provide the safety and code correctness required for assets and other high value use cases. Its native smart contract language, Michelson, facilitates formal verification, a methodology commonly used in mission-critical environments such as the aerospace, nuclear, and semiconductor industries.',
+            img: '/img/icons/smartcontract.svg',
+            alt: 'Smart Contracts'
+        },
+        {
+            heading: 'Upgradable to the State of the Art',
+            text: `Tezos' modular architecture and formal upgrade mechanism allow the network to propose and adopt new technological innovations smoothly as they emerge. These aspects, combined with Tezos' on-chain invoicing mechanism, enable the protocol to remain the state-of-the-art long into the future -- without sacrificing community consensus.`,
+            img: '/img/icons/future.svg',
+            alt: 'Upgradable'   
+        },
+        {
+            heading: 'Open Participation and Incentive Alignment',
+            text: 'In Tezos, all stakeholders may participate in network upgrades by evaluating, proposing, or approving amendments. Unlike in Proof-of-Work and other Proof-of-Stake networks, all stakeholders can help to secure the network (via baking or delegating), and avoid being diluted by inflation.',
+            img: '/img/icons/network.svg',
+            alt: 'State of the Art'   
+        }
+    ]}
+/>
+
+</Wrapper>
+
+<Wrapper bg={colors.blue} color={colors.white} padded center id="work-interest">
+
+# Are you interested in working full-time on Tezos?
+
+</Wrapper>
+
+<Wrapper contained id="current-openings">
+
+## Current Openings Across the Tezos Ecosystem
+
+
+Tezos is the product of many organizations and individuals across the globe working together on an open-source project.
+
+Don’t see the perfect role for you but want to work on Tezos? Reach out to the [Work on Tezos mailbox](mailto:jobsfair@tezos.com) - include your resume, what you’re looking for, and why you’re excited to work on Tezos. Resumes are shared with a number of organizations in the Tezos ecosystem.
+
+Note: Listings are provided by each team separately. If you are an organization in the Tezos ecosystem that is hiring and interested in listing your open roles here, please email the [Work on Tezos mailbox](mailto:jobsfair@tezos.com).
+
+</Wrapper>
+
+<Wrapper bg={colors.lightestGrey} id='jobs-list'>
+
+<JobsModule />
+
+</Wrapper>
+
+<Wrapper bg={colors.darkBlue} color={colors.white} id="tezos-updates">
+<div className="container">
+
+# Tezos updates
+
+## <img src="/img/icons/tezos-protocol.svg"/> Tezos protocol
+
+<NewsUpdates category="Tezos protocol" />
+
+---
+
+## <img src="/img/icons/development.svg"/> Development:
+
+<NewsUpdates category="Development" />
+
+---
+
+## <img src="/img/icons/ecosystem.svg"/>  Ecosystem:
+
+<NewsUpdates category="Ecosystem" />
+
+</div>
+</Wrapper>
+
+<Wrapper bg={colors.white} padded center id="advancing-tezos">
+
+# Individuals and entities all over the world are building on and advancing Tezos.
+
+</Wrapper>
+
+<SideBySide 
+    cardOne={{
+        heading: 'Interested in exploring Tezos for business, non-profit, or government use?',
+        buttonText: 'Reach Out',
+        href: 'mailto:reachout@tezos.com',
+        bg: colors.grey,
+        id: 'card-one'
+    }}
+    cardTwo={{
+        heading: 'Want to get started building on Tezos?',
+        buttonText: 'Access Developer Portal',
+        href: '/developer-portal',
+        bg: colors.blue,
+        id: 'card-two'
+    }}
+/>

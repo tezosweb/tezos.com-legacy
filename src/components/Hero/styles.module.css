@@ -1,0 +1,37 @@
+.heroWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.heroTextContainer {
+    margin: 30px 0 30px 30px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.heroImageContainer {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 30px 0;
+}
+
+.heroImage {
+    width: 50%;
+}
+
+
+@media (max-width: 750px) {
+    .heroWrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .heroTextContainer {
+        margin: 20px auto;
+    }
+    .heroImageContainer {
+        display: none;
+    }
+}

@@ -1,0 +1,31 @@
+---
+id: cta-section
+title: Homepage CTAs 
+---
+
+import Wrapper from 'components/Wrapper';
+import SideBySide from 'components/SideBySide';
+import colors from 'src/css/colors';
+
+<Wrapper bg={colors.white} padded center id="advancing-tezos">
+
+# Individuals and entities all over the world are building on and advancing Tezos.
+
+</Wrapper>
+
+<SideBySide 
+    cardOne={{
+        heading: 'Interested in exploring Tezos for business, non-profit, or government use?',
+        buttonText: 'Reach Out',
+        href: 'mailto:reachout@tezos.com',
+        bg: colors.grey,
+        id: 'card-one'
+    }}
+    cardTwo={{
+        heading: 'Want to get started building on Tezos?',
+        buttonText: 'Access Developer Portal',
+        href: '/developer-portal',
+        bg: colors.blue,
+        id: 'card-two'
+    }}
+/>

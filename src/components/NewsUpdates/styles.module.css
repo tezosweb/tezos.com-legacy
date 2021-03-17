@@ -1,0 +1,25 @@
+.updateContainer {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 18px;
+}
+
+.updateContainer h2 {
+    color: var(--ifm-color-primary)
+}
+
+.image {
+    margin-right: 39px;
+}
+
+.updateContainer a {
+    color: white;
+}
+
+.updateContainer a:hover {
+    color: var(--ifm-color-primary);
+    text-decoration: none;
+}

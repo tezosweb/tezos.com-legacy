@@ -1,0 +1,134 @@
+.background {
+    pointer-events: none;
+    background: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    transition: all 0.5s;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 200px;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s;
+}
+
+.modalWrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: none;
+    background-color: #fff;
+    padding: 50px 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.backgroundOpen {
+    pointer-events: auto;
+    opacity: 1;
+    height: 100%;
+}
+
+.modalOpen {
+    top: 0;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.title {
+    font-weight: 200;
+    color: #48598d
+}
+
+.description {
+    margin-bottom: 2em;
+}
+
+.input {
+    font-size: 16px;
+    border: 1px solid #aaa;
+    padding: 0.75em;
+    color: #000;
+    display: block;
+    width: 100%;
+    margin-bottom: 2em;
+
+}
+
+.buttonContainer {
+    width: 100%;
+    text-align: center;
+}
+
+.confirmation {
+margin-top: 2em;
+  font-size: 18px;
+
+}
+
+.twitterLink {
+    text-decoration: none;
+}
+
+.twitterLink:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 20px;
+    height: 20px;
+}
+
+.closeButton:hover {
+    cursor:pointer;
+}
+
+.closeButton:before, .closeButton:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: #2c7df7;
+}
+
+.closeButton:before {
+    transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+}
+
+.closeButton:after {
+    transform: translateY(-50%) translateX(-50%) rotate(45deg);
+}
+
+@media screen and (min-width: 768px) {
+    .modalWrap {
+      padding: 50px 50px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+    }
+}
+
+html[data-theme='dark'] .modalWrap {
+    color: black;
+}

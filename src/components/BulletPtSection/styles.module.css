@@ -1,0 +1,18 @@
+.bulletPtSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.bulletPt {
+    text-align: center;
+    width: 350px;
+    margin: 65px 20px 20px 20px;
+    border: 2px solid #91A3CB;
+    padding: 0px 15px 10px 15px;
+    position: relative;
+    top: 50px;
+    border-radius: 30px;
+}

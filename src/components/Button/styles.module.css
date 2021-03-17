@@ -1,0 +1,65 @@
+.buttonPrimary {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: var(--ifm-color-primary);
+    color: white;
+    margin: 5px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.inverse {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.whiteAndBlue {
+    color: #3380EF;
+    background-color: white;
+    border: none;
+}
+
+
+html[data-theme="dark"] .inverse {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.btnActual {
+    border: none;
+    font-size: 1em;
+    border: none;
+    padding: 14px 27px;
+}
+
+.devPortal {
+    position: relative;
+    bottom: 30px;
+    color: #FFFFFF;
+    line-height: 20px;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid #3380EF;
+}
+
+.buttonPrimary:hover, .inactive {
+    color: white;
+    text-decoration: none;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.inverse:hover {
+    color: black;
+}
+
+.whiteAndBlue:hover {
+    color: #3380EF;
+}
+
+.wideBtn {
+    width: 100%;
+}

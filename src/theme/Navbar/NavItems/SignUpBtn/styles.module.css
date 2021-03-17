@@ -1,0 +1,22 @@
+.signUpBtn {
+    padding: 7px 18px;
+    background-color: #2c7df7;
+    border-radius: 20px;
+    color: white;
+}
+
+.headerButton {
+    margin-right: 8px;
+}
+
+.signUpBtn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+@media (max-width: 996px) {
+    .headerButton {
+        display: none;
+        margin-right: 0;
+    }
+}

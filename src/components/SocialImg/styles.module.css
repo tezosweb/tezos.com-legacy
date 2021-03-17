@@ -1,0 +1,31 @@
+.socialButton {
+    position: relative;
+    bottom: 0;
+    background-color: white;
+    border-color: black;
+    width: 40px;
+    height: 40px; 
+    border-width: 1px;
+    border-radius: 50%;
+    padding: 0;
+    margin: 5px;
+    transition: all 0.3s;
+}
+
+.socialButton img {
+    position: relative;
+    top: 1px;
+    filter: brightness(1.1) invert(1) sepia(1) saturate(1) hue-rotate(160deg);
+    transition: all 0.3s;
+}
+
+.socialButton:hover {
+    bottom: 3px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+}
+
+.socialButton:hover img {
+    filter: none;
+    cursor: pointer;
+}
