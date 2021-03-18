@@ -12,7 +12,7 @@
     "clear": "docusaurus clear",
     "update-jobs": "node scripts/update-jobs.js",
     "update-updates": "node scripts/update-updates.js",
-    "updates": "node scripts/update-jobs.js && scripts/update-updates.js"
+    "updates": "node scripts/update-jobs.js && node scripts/update-updates.js"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.72",
