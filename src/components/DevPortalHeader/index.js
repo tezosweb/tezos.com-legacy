@@ -34,7 +34,7 @@ const DevPortalHeader = ({ title, tagline, emailListLabel, contributeBtn }) => (
               <div className={clsx('row', styles.contributeButtonSection)}>
                     <Button 
                         text={contributeBtn}
-                        href="https://github.com/tqtezos/tezos.com"
+                        href="https://github.com/tqtezos/tezos.com/blob/main/docs/developer-portal.mdx"
                         devPortal
                         />
               </div>
