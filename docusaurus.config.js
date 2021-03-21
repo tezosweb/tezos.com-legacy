@@ -60,10 +60,7 @@ module.exports = {
       ],
     },
     colorMode: {
-      switchConfig: {
-        lightIcon: ' ',
-        darkIcon: ' ',
-      }
+      disableSwitch: true,
     },
     footer: {
       style: 'dark',
