@@ -25,6 +25,11 @@ const socialMedia = [
     img: '/img/icons/social-icon-telegram.svg'
   },
   {
+    text: 'Discord',
+    link: 'https://discord.gg/XRHZgze',
+    img: '/img/icons/social-icon-discord.svg'
+  },
+  {
     text: 'Reddit',
     link: 'https://www.reddit.com/r/tezos',
     img: '/img/icons/social-icon-reddit.svg'
