@@ -14,7 +14,8 @@ import Footer from '@theme/Footer';
 import LayoutProviders from '@theme/LayoutProviders';
 import LayoutHead from '@theme/LayoutHead';
 import useKeyboardNavigation from '@theme/hooks/useKeyboardNavigation';
-import ModalsWrapper from 'components/ModalsWrapper'
+import ModalsWrapper from 'components/ModalsWrapper';
+import './styles.css'
 
 function Layout(props) {
   const {children, noFooter, wrapperClassName} = props;
@@ -35,7 +36,7 @@ function Layout(props) {
 
       <div className={clsx('main-wrapper', wrapperClassName)}>{children}</div>
 
-      {!noFooter && <Footer />}
+      {!noFooter && <Footer/>}
 
       </ModalsWrapper>
     </LayoutProviders>

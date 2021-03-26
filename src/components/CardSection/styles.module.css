@@ -1,0 +1,52 @@
+.cardSection {
+    display: grid;
+    width: 100%;
+}
+
+.twoColumn {
+    grid-template-columns: 1fr 1fr;
+}
+
+.threeColumn {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.fourColumn {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 1320px) {
+    .fourColumn {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+    }
+}
+
+@media (max-width: 1068px) {
+    .cardSection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fourColumn {
+        grid-row-gap: 0px;
+    }
+}
+
+@media (max-width: 996px) {
+    .cardSection {
+        display: grid;
+        width: 100%;
+    }
+
+    .fourColumn {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .cardSection {
+        display: flex;
+        flex-direction: column;
+    }
+}

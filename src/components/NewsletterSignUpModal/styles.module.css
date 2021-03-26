@@ -48,7 +48,11 @@
 
 .title {
     font-weight: 200;
-    color: #48598d
+    color: #48598d;
+}
+
+.thanks {
+    font-size: 2.3em;
 }
 
 .description {

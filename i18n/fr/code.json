@@ -1,0 +1,50 @@
+{
+  "Tezos Developer Portal": {
+    "message": "Tezos Developer Portal"
+  },
+  "Developer Support Channels:": {
+    "message": "Developer Support Channels:"
+  },
+  "Developer Mailing List:": {
+    "message": "Developer Mailing List:"
+  },
+  "Contribute To Dev Portal": {
+    "message": "Contribute To Dev Portal"
+  },
+  "Thank you for subscribing!": {
+    "message": "Thank you for subscribing!"
+  },
+  "Legal Copy": {
+    "message": "You are now leaving Tezos.com. This link is being provided as a convenience and for informational purposes only; the provision of this link does not constitute an endorsement or an approval by TQ, and TQ is not liable for the content, functions, accuracy, legality, appropriateness, or any other aspect of such other websites, tools or resources."
+  },
+  "Legal Button": {
+    "message": "Continue"
+  },
+  "Sign Up Title": {
+    "message": "Tezos Updates"
+  },
+  "Sign Up Description": {
+    "message": "Sign up to receive news and updates on ecosystem development, tools, and upcoming events."
+  },
+  "Sign Up Placeholder": {
+    "message": "Your Email"
+  },
+  "Sign Up Button": {
+    "message": "Sign Me Up"
+  },
+  "Sign Up Thank You": {
+    "message": "Thank You For Signing Up!"
+  },
+  "Sign Up Update Text": {
+    "message": "For real time updates follow"
+  },
+  "Sign Up Update Link Text": {
+    "message": "@Tezos on Twitter"
+  },
+  "Email": {
+    "message": "Email"
+  },
+  "Submit": {
+    "message": "Submit"
+  }
+}

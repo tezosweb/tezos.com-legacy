@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from '@docusaurus/Link'
 import styles from './styles.module.css'
 import clsx from 'clsx';
 import { ModalContext as NewletterSignUp } from 'context/newsletter-modal-context'
@@ -34,19 +35,33 @@ const Button = ({
             </NewletterSignUp.Consumer>
         )
     } else {
-        return (
-            <a 
-                className={clsx(styles.buttonPrimary, 
-                            inverse && styles.inverse,
-                            whiteAndBlue && styles.whiteAndBlue,
-                            devPortal && styles.devPortal)}
-                href={href}
-                target={href.slice(0, 4) === 'http' ? "_blank" : ""}
-                rel="noopener noreferrer"
-                onClick={closeModal ? closeModal : null}>
-                {text}
-            </a>
-        )
+        if (href.slice(0,4) === 'http') {
+                    return (
+                        <a 
+                            className={clsx(styles.buttonPrimary, 
+                                        inverse && styles.inverse,
+                                        whiteAndBlue && styles.whiteAndBlue,
+                                        devPortal && styles.devPortal)}
+                            href={href}
+                            target={href.slice(0, 4) === 'http' ? "_blank" : ""}
+                            rel="noopener noreferrer"
+                            onClick={closeModal ? closeModal : null}>
+                            {text}
+                        </a>
+                    )
+        } else {
+            return (
+                <Link
+                    className={clsx(styles.buttonPrimary, 
+                        inverse && styles.inverse,
+                        whiteAndBlue && styles.whiteAndBlue,
+                        devPortal && styles.devPortal)}
+                    to={href}
+                    onClick={closeModal ? closeModal : null}>
+                        {text}
+                    </Link>
+            )
+        }
     }
 }
 

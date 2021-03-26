@@ -3,21 +3,30 @@ import SignUpModalContext from 'context/newsletter-modal-context';
 import LegalModalContext from 'context/legal-modal-context';
 import NewsletterSignUpModal from 'components/NewsletterSignUpModal';
 import LegalModal from 'components/LegalModal'
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 function ModalsWrapper({ children }) {
+    const { codeTranslations } = useDocusaurusContext();
     return (
         <SignUpModalContext>
             <LegalModalContext>
-                <NewsletterSignUpModal />
+
+                <NewsletterSignUpModal 
+                    title={codeTranslations["Sign Up Title"]}
+                    description={codeTranslations["Sign Up Description"]}
+                    placeholder={codeTranslations["Sign Up Placeholder"]}
+                    button={codeTranslations["Sign Up Button"]}
+                    thankYou={codeTranslations["Sign Up Thank You"]}
+                    updateText={codeTranslations["Sign Up Update Text"]}
+                    updateLinkText={codeTranslations["Sign Up Update Link Text"]}
+                    />
+
                 <LegalModal
-                    legalCopy="You are now leaving Tezos.com. This link is 
-                    being provided as a convenience and for informational purposes 
-                    only; the provision of this link does not constitute an endorsement 
-                    or an approval by TQ, and TQ is not liable for the content, functions, 
-                    accuracy, legality, appropriateness, or any other aspect of such other 
-                    websites, tools or resources."
-                    buttonLabel="Continue" />
+                    legalCopy={codeTranslations["Legal Copy"]}
+                    buttonLabel={codeTranslations["Legal Button"]} />
+
                     {children}
+
             </LegalModalContext>
         </SignUpModalContext>
     )

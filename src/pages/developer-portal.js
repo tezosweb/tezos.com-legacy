@@ -32,6 +32,9 @@ function DeveloperPortal() {
             tagline={<Translate>Developer Support Channels:</Translate>}
             emailListLabel={<Translate>Developer Mailing List:</Translate>}
             contributeBtn={<Translate>Contribute To Dev Portal</Translate>}
+            placeholder={<Translate>Email</Translate>}
+            button={<Translate>Submit</Translate>}
+            success={<Translate>Thank you for subscribing!</Translate>}
             />
         <main>
             <div className={clsx('container', styles.mdxContainer)}>

@@ -28,7 +28,7 @@ const socialMedia = [
       }
 ]
 
-const DevPortalHeader = ({ title, tagline, emailListLabel, contributeBtn }) => (
+const DevPortalHeader = ({ title, tagline, emailListLabel, contributeBtn, success, placeholder, button }) => (
     <header className={clsx('hero hero--primary', styles.heroDevPortal)}>
           <div className="container">
               <div className={clsx('row', styles.contributeButtonSection)}>
@@ -54,9 +54,10 @@ const DevPortalHeader = ({ title, tagline, emailListLabel, contributeBtn }) => (
                         <div className={styles.signUp}>
                             <EmailSignUp 
                                 label={emailListLabel}
-                                placeholder="Email"
-                                buttonLabel="Submit"
+                                placeholder={placeholder}
+                                buttonLabel={button}
                                 devPortal
+                                success={success}
                             />
                         </div>
                     </div>

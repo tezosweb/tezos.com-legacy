@@ -1,6 +1,7 @@
 import clsx from 'clsx'
 import React, { useState } from 'react'
 import addToMailchimp from 'utils/mailchimp'
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './styles.module.css'
 
 function statusUpdate(status) {
@@ -26,7 +27,7 @@ function validEmail(email) {
     return /\S+@\S+\.\S+/.test(email)
 }
 
-function formSubmit(e, email, setState, setEmail) {
+function formSubmit(e, email, setState, setEmail, success) {
     e.preventDefault()
 
     if (!validEmail(email)) {
@@ -36,16 +37,9 @@ function formSubmit(e, email, setState, setEmail) {
     addToMailchimp(email)
         .then((data) => {
 
-            if (data.msg.includes('already subscribed')) {
+            if (data) {
                 setState({
-                    message: 'This email address is already subscribed!',
-                    status: data.result
-                })
-            } 
-
-            if (data.result === 'success') {
-                setState({
-                    message: 'Thank you for subscribing!',
+                    message: success || 'Thank you for subscribing!',
                     status: data.result
                 })
 
@@ -62,17 +56,18 @@ function formSubmit(e, email, setState, setEmail) {
         .catch(err => console.error(err))
 }
 
-function EmailSignUp({ label, placeholder, buttonLabel, devPortal }) {
+function EmailSignUp({ label, placeholder, buttonLabel, devPortal, success  }) {
     const [ email, setEmail ] = useState('')
     const [ state, setState ] = useState({ status: 'ready', message: '' })
+    const { codeTranslations } = useDocusaurusContext();
 
     let inactive = !validEmail(email)
 
     return (
         <form
             className={styles.form}
-            onSubmit={(e) => formSubmit(e, email, setState, setEmail)}
-            id="newsletter-form"
+            onSubmit={(e) => formSubmit(e, email, setState, setEmail, success )}
+            id={`newsletter-form-${devPortal ? '2' : '1'}`}
         >
             <h3>
                 <label className={clsx(styles.label, devPortal && 'hero__subtitle')} htmlFor="mailing-list-email">{label}</label>
@@ -80,20 +75,20 @@ function EmailSignUp({ label, placeholder, buttonLabel, devPortal }) {
             <div className={clsx(styles.signUpContainer, devPortal && styles.devPortal)}>
                 <input 
                     className={styles.emailField}
-                    id="mailing-list-email"
+                    id={`mailing-list-email-${devPortal ? '2' : '1'}`}
                     type="email"
-                    placeholder={placeholder}
+                    placeholder={typeof placeholder === 'string' ? placeholder : codeTranslations["Email"]}
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
                 <input
                     className={clsx(styles.submit, inactive && styles.inactive)} 
                     type="submit"
-                    value={buttonLabel}
+                    value={typeof buttonLabel === 'string' ? buttonLabel : codeTranslations["Submit"]}
                 />
                 <p 
                     className={styles.response}
-                    style={{ color: statusUpdate(state.status)}}
+                    style={{ color: 'green'}}
                 >
                     {state.message}
                 </p>

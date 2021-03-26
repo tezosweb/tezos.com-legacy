@@ -3,7 +3,7 @@ import clsx from 'clsx'
 import { ModalContext } from 'context/newsletter-modal-context'
 import styles from './styles.module.css'
 
-function SignUpBtn({ header }) {
+function SignUpBtn({ header, text }) {
     return (
         <ModalContext.Consumer>
             {({ openModal }) => (
@@ -14,7 +14,7 @@ function SignUpBtn({ header }) {
                         openModal({ open: true })
                     }}>
                         <div className={styles.signUpBtn}>
-                            Sign Up For Updates
+                            {text}
                         </div>
                 </a>
             )}

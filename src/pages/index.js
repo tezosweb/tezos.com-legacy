@@ -6,6 +6,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './index.module.css';
 import Wrapper from 'components/Wrapper';
+import Translate from '@docusaurus/Translate';
 import colors from 'src/css/colors';
 
 import Welcome from 'docs/home/welcome.mdx'
@@ -32,16 +33,24 @@ function Home() {
       title={`${siteConfig.title}`}
       description="Tezos is an open-source platform for assets and applications backed by a global community of validators, researchers, and builders."
       permalink="https://tezos.com">
+
+
       <main>
+
           <Welcome />
+
           <Jobs />
+
           <Wrapper bg={colors.darkBlue} color={colors.white} updates id="tezos-updates">
                 <div className={styles.updatesContent}>
                   <Updates />
                 </div>
           </Wrapper>
+
           <CTASection />
+
       </main>
+
     </Layout>
   );
 }

@@ -7,10 +7,13 @@ module.exports = {
   baseUrl: '/',
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'pl'],
+    locales: ['en', 'fr', 'pl'],
     localeConfigs: {
       en: {
         label: 'English',
+      },
+      fr : {
+        label: 'Français'
       },
       pl: {
         label: 'Igpay Atinlay',
@@ -41,7 +44,7 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/learn/what-is-tezos',
+          to: 'docs/learn/get-started',
           label: 'Get Started',
           activeBasePath: 'docs/learn',
           position: 'left',
@@ -56,6 +59,11 @@ module.exports = {
           label: 'Fork Me On GitHub!',
           className: 'fork-on-github',
           position: 'right',
+        },
+        {
+          href: 'email',
+          label: 'Sign Up For Updates',
+          position: 'right'
         }
       ],
     },
@@ -69,84 +77,64 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Start Learning',
-              to: 'docs/learn/what-is-tezos',
-            },
-            {
-              label: 'Developer Portal',
-              to: 'developer-portal',
-            },
-            {
-              label: 'Sitemap',
-              to: 'docs/sitemap/home',
-            }
-          ],
-        },
-        {
-          title: 'Updates & Announcements',
+          title: 'Follow Tezos:',
           items: [
             {
               label: 'Twitter',
-              href: 'https://twitter.com/tezos'
+              to: 'https://twitter.com/tezos',
             },
             {
               label: 'Telegram',
-              href: 'https://t.me/tezosplatform'
-            }
-          ]
-        },
-        {
-          title: 'Development',
-          items: [
-            {
-              label: 'Slack',
-              href: '/'
-            },
-            {
-              label: 'GitLab',
-              href: 'https://gitlab.com/tezos/tezos',
-            },
-            {
-              label: 'Stack Exchange',
-              href: 'https://tezos.stackexchange.com/',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Agora',
-              href: 'https://agora.tezos.com/',
-            },
-            {
-              label: 'Riot',
-              href: 'https://riot.tzchat.org/',
+              to: 'https://t.me/tezosplatform',
             },
             {
               label: 'Reddit',
-              href: 'https://www.reddit.com/r/tezos',
+              to: 'https://www.reddit.com/r/tezos',
             },
+            {
+              label: 'Tezos Agora',
+              to: 'https://forum.tezosagora.org/',
+            },
+            {
+              label: 'Stack Exchange',
+              to: 'https://tezos.stackexchange.com/',
+            },
+            {
+              label: 'Riot',
+              to: 'https://riot.tzchat.org/',
+            },
+            {
+              label: 'GitLab',
+              to: 'https://gitlab.com/tezos/tezos',
+            },
+            {
+              label: 'Discord',
+              to: 'https://discord.com/invite/udZwhQn',
+            }
           ],
         },
         {
-          title: 'More',
+          title: 'Sign Up For The Tezos Newsletter:',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: 'Email',
+              href: 'placeholder'
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/tqtezos/tezos.com',
+              label: 'Submit',
+              href: 'submit'
             },
-          ],
+            {
+              label: 'Thank you for subscribing!',
+              href: 'success'
+            },
+            {
+              label: 'This email address is already subscribed!',
+              href: 'duplicate'
+            }
+          ]
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Tezos, Inc. Built with Docusaurus.`,
     },
   },
   presets: [

@@ -22,5 +22,17 @@
   "item.label.GitHub": {
     "message": "GitHub",
     "description": "Navbar item with label GitHub"
+  },
+  "item.label.Get Started": {
+    "message": "etgay artedstay",
+    "description": "Navbar item with label Get Started"
+  },
+  "item.label.Fork Me On GitHub!": {
+    "message": "orkfay emay onyay GitHub!",
+    "description": "Navbar item with label Fork Me On GitHub!"
+  },
+  "item.label.Sign Up For Updates": {
+    "message": "ignsay upyay orfay updatesyay",
+    "description": "Navbar item with label Sign Up For Updates"
   }
 }

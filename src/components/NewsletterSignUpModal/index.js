@@ -5,19 +5,28 @@ import { ModalContext } from 'context/newsletter-modal-context'
 import styles from './styles.module.css'
 import addToMailchimp from 'utils/mailchimp'
 
-function EmailForm({ email, setEmail, error, setError, onSubmit }) {
+function EmailForm({ 
+        email, 
+        setEmail, 
+        error, 
+        setError, 
+        onSubmit,
+        title,
+        description,
+        placeholder,
+        button
+         }) {
     const validEmail = /\S+@\S+\.\S+/.test(email)
     return (
         <>
             <h1 className={styles.title}>
-                Tezos Updates
+                {title}
             </h1>
             <p className={styles.description}>
-                Sign up to receive news and updates on ecosystem development, tools, and
-                upcoming events.
+                {description}
             </p>
             <input className={styles.input}
-                placeholder="Your Email"
+                placeholder={placeholder}
                 type="email"
                 onChange={(e) => {
                     setEmail(e.target.value)
@@ -31,7 +40,7 @@ function EmailForm({ email, setEmail, error, setError, onSubmit }) {
             </input>
             <div className={styles.buttonContainer}>
             <Button
-                text="Sign Me Up"
+                text={button}
                 newsletter
                 validEmail={validEmail}
                 submitCB={() => validEmail && onSubmit()} 
@@ -52,6 +61,14 @@ function ModalContent(props) {
     const [ error, setError ] = useState(null)
     const [ email, setEmail ] = useState('')
 
+    const { title,
+        description,
+        placeholder,
+        button,
+        thankYou,
+        updateText,
+        updateLinkText } = props;
+
     useEffect(() => {
         if (props.open) {
             setEmail('')
@@ -64,17 +81,17 @@ function ModalContent(props) {
     if (complete) {
         return (
             <>
-                <h1 className={styles.title}>Thank You For Signing Up</h1>
+                <h1 className={clsx(styles.title, styles.thanks)}>{thankYou}</h1>
                 <p className={styles.confirmation}>
                     
-                    For real-time updates follow{' '}
+                    {updateText}{' '}
                     <a 
                         className={styles.twitterLink} 
                         href="https://twitter.com/tezos/" 
                         target="_blank"
                         rel="noopener noreferrer">
-                            @Tezos on Twitter
-                    </a>
+                            {updateLinkText}
+                    </a>.
                 </p>
             </>
         )
@@ -86,12 +103,22 @@ function ModalContent(props) {
             setEmail={setEmail}
             error={error}
             setError={setError}
+            title={title}
+            description={description}
+            placeholder={placeholder}
+            button={button}
             onSubmit={() => onSubscribe(email, setComplete)}
         />
     )
 }
 
-function NewsletterSignUpModal() {
+function NewsletterSignUpModal({ title,
+    description,
+    placeholder,
+    button,
+    thankYou,
+    updateText,
+    updateLinkText}) {
 
     const { openModal } = useContext(ModalContext)
 
@@ -130,7 +157,15 @@ function NewsletterSignUpModal() {
                                         }}>
                                             close
                                     </button>
-                                    <ModalContent open={state.open} />
+                                    <ModalContent 
+                                        open={state.open} 
+                                        title={title}
+                                        description={description}
+                                        placeholder={placeholder}
+                                        button={button}
+                                        thankYou={thankYou}
+                                        updateText={updateText}
+                                        updateLinkText={updateLinkText}/>
                         </div>
                         </div>
                     </>
