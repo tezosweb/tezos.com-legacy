@@ -22,6 +22,7 @@ Always remember: **if you do not control your private keys, you do not control y
 - [Guarda](https://guarda.com/ "Guarda")<sup>†</sup>  *(macOS, Windows, iOS, Android)*
 - [Kukai](https://wallet.kukai.app/ "Kukai") *(Web)*
 - [Magma](https://magmawallet.io/ "Magma")<sup>†</sup> *(iOS, Android)*
+- [Sylo](https://sylo.io/wallet "Sylo") *(iOS, Android)*
 - [Temple](https://templewallet.com/ "Temple") *(Web)*
 - [ZenGo](https://www.zengo.com/)<sup>†</sup>  *(iOS, Android)*
 
