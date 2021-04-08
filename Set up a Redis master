@@ -1,0 +1,24 @@
+Set up a Redis master
+In this section, you deploy a Redis master and verify that it is running.
+
+Set up gcloud and kubectl credentials
+gcloud container clusters \
+    get-credentials [cluster-name] \
+    --zone [cluster-zone]
+Replace [cluster-name] and [cluster-zone] with the name and zone of the instance that you created.
+
+Exploring the controller
+View the configuration file for the controller:
+
+cat redis-master-deployment.yaml
+This file contains configuration to deploy a Redis master. The spec field defines the pod specification that the replication controller uses to create the Redis pod. The image tag refers to a Docker image to be pulled from a registry.
+
+Deploy the master controller
+Deploy the Redis master:
+
+kubectl create -f \
+    redis-master-deployment.yaml
+View the running pod
+Verify that the Redis master pod is running:
+
+kubectl get pods
