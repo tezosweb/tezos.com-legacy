@@ -1,0 +1,46 @@
+Request URL: https://api.github.com/_private/browser/stats
+Request Method: POST
+Status Code: 200 
+Remote Address: 140.82.114.6:443
+Referrer Policy: no-referrer-when-downgrade
+access-control-allow-origin: *
+access-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset
+cache-control: no-cache
+content-length: 0
+content-security-policy: default-src 'none'
+content-type: text/plain
+date: Sun, 18 Apr 2021 02:39:26 GMT
+referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
+server: GitHub.com
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+vary: Accept-Encoding, Accept, X-Requested-With
+x-content-type-options: nosniff
+x-frame-options: deny
+x-github-media-type: github.v3; format=json
+x-github-request-id: 885E:6D2F:1AFC30B:31B52F5:607B9BDD
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 60
+x-ratelimit-reset: 1618717166
+x-ratelimit-used: 0
+x-xss-protection: 0
+:authority: api.github.com
+:method: POST
+:path: /_private/browser/stats
+:scheme: https
+accept: */*
+accept-encoding: gzip, deflate, br
+accept-language: en-US,en;q=0.9
+content-length: 179
+content-type: text/plain;charset=UTF-8
+cookie: _octo=GH1.1.1782998122.1618667315; tz=America%2FChicago; color_mode=%7B%22color_mode%22%3A%22dark%22%2C%22light_theme%22%3A%7B%22name%22%3A%22light%22%2C%22color_mode%22%3A%22light%22%7D%2C%22dark_theme%22%3A%7B%22name%22%3A%22dark%22%2C%22color_mode%22%3A%22dark%22%7D%7D; logged_in=yes; dotcom_user=CoreValExtreme
+dnt: 1
+origin: https://github.com
+referer: https://github.com/CoreValExtreme/tezos.com/settings/secrets/actions
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not\"A\\Brand";v="99"
+sec-ch-ua-mobile: ?1
+sec-fetch-dest: empty
+sec-fetch-mode: no-cors
+sec-fetch-site: same-site
+user-agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.116 Mobile Safari/537.36
+{stats: [{longTasks: [{name: "unknown", duration: 63,…}], timestamp: 1618713565257, loggedIn: true}]}
+stats: [{longTasks: [{name: "unknown", duration: 63,…}], timestamp: 1618713565257, loggedIn: true}]
