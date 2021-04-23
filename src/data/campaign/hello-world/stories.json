@@ -1,0 +1,157 @@
+[
+    {
+        "id": "crypto-superhero",
+        "heading": ["If you’re a superfan, meet Tezos.* "],
+        "tags": ["Fandom", "NFTs", "Collectibles"],
+        "body": ["* Tezos is helping to empower superfans, creators, and collectors to connect with a new form of storytelling.", "A new landscape of fandom is emerging. NFTs (non-fungible tokens) on Tezos bring an exciting dimension to how fans can own comics, paintings, albums, or other collectibles. This is helping to empower people to interact with their favorite art and media in ways never before possible. The future of collectibles brings about new possibilities, like having a say on where collectibles are displayed, accessing exclusive content and events, and engaging with creators in more direct ways."],
+        "links": [
+            {
+                "text": "Explore InterPop",
+                "href": "https://interpop.io/"
+            },
+            {
+                "text": "World, Meet InterPop: The Emerging Landscape of NFTs and Fandom",
+                "href": "https://medium.com/@InterPop/world-meet-interpop-the-emerging-landscape-of-nfts-and-fandom-eef573d782ce"
+            }
+        ]
+    },
+    {
+        "id": "crypto-gold",
+        "heading": ["If you know smart money is the new gold standard, meet Tezos.* "],
+        "tags": ["Cryptocurrency", "tez", "Smart Money"],
+        "body": ["* Tezos is smart money that’s redefining what it means to hold and exchange value in a digitally connected world.", "Tez — the cryptocurrency of Tezos — is borderless, digital money that you can directly send and receive from just about anyone, anywhere."],
+        "links": [
+            {
+                "text": "Explore the Kukai Wallet",
+                "href": "https://wallet.kukai.app/accounts"
+            },
+            {
+                "text": "Tezos: Superior Governance and Use Cases",
+                "href": "https://www.gemini.com/cryptopedia/what-is-tezos-xtz-governance-use-cases"
+            }
+        ]
+    },
+    {
+        "id": "crypto-energy",
+        "heading": ["If you live green, meet Tezos.*"],
+        "tags":["NFTs", "Sustainability"],
+        "body":["* Transactions on Tezos consume between one to ten million times less energy than other blockchains.", "Like all things digital, blockchains use energy. As the technology becomes more widely adopted, conversations around efficiency and energy consumption are emerging. Minting one NFT on some other networks uses the energy equivalent of 30+ liters of oil. To do the same on Tezos, it would be less than the amount of oil you can extract from one sunflower seed. Big energy difference."],
+        "links": [
+            {
+                "text": "Proof of Work vs. Proof of Stake: the Ecological Footprint",
+                "href": "https://tqtezos.medium.com/proof-of-work-vs-proof-of-stake-the-ecological-footprint-c58029faee44"
+            },
+            {
+                "text": "Discover clean NFT art on Tezos",
+                "href": "https://www.hicetnunc.xyz/"
+            }
+        ]
+    },
+    {
+        "id": "crypto-ink",
+        "heading": ["If your tattoos are works of art, meet Tezos.* "],
+        "tags": ["NFTs", "Digital Art"],
+        "body": ["* NFTs and digital collectibles on Tezos are helping artists monetize their passions.", "Every day, artists of all backgrounds are creating digital collectibles and non-fungible tokens (NFTs) on Tezos to help monetize their original artwork. Artists can permanently link themselves to their art via an NFT, and share commissions, collect resale royalties, or even host and curate their own creations."],
+        "links": [
+            {
+                "text": "Create and collect NFTs on Tezos",
+                "href": "https://www.hicetnunc.xyz/"
+            }
+        ]
+    },
+    {
+        "id": "crypto-enterprise",
+        "heading": ["If you think financial forecast models are cool, but building a digital assets division is cooler, meet Tezos.* "],
+        "tags": ["Enterprise", "DeFi"],
+        "body": ["* Decentralized finance (DeFi) applications being built on Tezos will help evolve how business is done with better coordination, automation, data management, security, and verification across industries."],
+        "links": [
+            {
+                "text": "Learn about Tezos for Enterprise", 
+                "href": "https://tqtezos.com/enterprise/"
+            },
+            {
+                "text": "French retail giant will launch Tezos-based stablecoin",
+                "href": "https://cointelegraph.com/news/french-retail-giant-will-launch-tezos-based-stablecoin"
+            },
+            {
+                "text": "Societe Generale issues Security Token on Tezos",
+                "href": "https://www.societegenerale.com/en/news/press-release/first-structured-product-public-blockchain"
+            }
+        ]
+    },
+    {
+        "id": "crypto-cousin",
+        "heading": ["If your epic style stops people on the street, meet Tezos.*"],
+        "tags": ["Store of Value", "NFTs", "Collectibles"],
+        "body": ["* Collectors are finding new ways to preserve value on Tezos.", "They are using NFTs (non-fungible tokens) to authenticate and preserve the value of their collections on the Tezos blockchain, whether that’s a painting, a comic book, an epic hat, or even a sneaker collection.  NFTs are unique digital assets that can’t be replicated, ensuring that your item is truly one-of-a-kind."], 
+        "links": [
+            {
+                "text": "Learn more about Tezos use cases",
+                "href": "https://medium.com/@cwiser/some-thoughts-on-tezos-use-cases-f20f83c33f90"
+            }
+        ]
+    },
+    {
+        "id": "crypto-patron",
+        "heading": ["If you’re a cool collector-type with two identical dogs, looking to share a masterpiece, meet Tezos.* "],
+        "tags": ["NFTs", "Municipal Art"],
+        "body": ["* Curators are using NFTs on Tezos to usher in a new generation of art lovers.", "Cities and towns around the world are exploring how Tezos can transform civic engagement. NFTs (non-fungible tokens) create novel ways to monetize and maintain local projects, while bringing new opportunities for residents to support and revitalize their neighborhoods."],
+        "links": [
+            {
+                "text": "Building an NFT Platform for Municipal Art",
+                "href": "https://medium.com/tqtezos/building-an-nft-platform-for-municipal-art-engaging-citizens-and-collectors-and-helping-cities-11e014fc8363"
+            }
+        ]
+    },
+    {
+        "id": "crypto-baby",
+        "heading":["If you’re envisioning a better digital future, meet Tezos.* "],
+        "tags": ["Cryptocurrency", "tez", "Decentralized Web"],
+        "body": ["* Tezos is a digital commonwealth that gives a voice not just to the powerful, but to everyone.", "The technology was designed to foster a collaborative, open, and global community. People who own tez — the cryptocurrency of Tezos — have a say over how the blockchain network evolves, determining what’s best for their interests and privacy."],
+        "links": [
+            {
+                "text": "Tezos: The True Digital Commonwealth",
+                "href": "https://www.gemini.com/cryptopedia/tezos-xtz-coin-digital-commonwealth"
+            },
+            {
+                "text": "TQuorum: In Conversation with Tim Draper", 
+                "href": "https://tquorum.com/stream/in-conversation-with-tim-draper"
+            }
+        ]
+    },
+    {
+        "id": "crypto-truesy",
+        "heading": ["If your interests can’t be pinned down and you like it that way, meet Tezos.* "],
+        "tags": ["NFTs", "Collectibles", "Digital Art"],
+        "body": ["* Curated marketplaces on Tezos are bringing a new lens to NFTs.", "NFT (non-fungible token) marketplaces are helping to empower creators and fans alike to access the global art world in ways they couldn’t before. Some marketplaces allow anyone to mint digital assets (like digital art or trading cards), while others curate exclusive drops from fine artists, legendary musicians, luxury fashion designers, athletes, and more. The bespoke nature of NFTs means that every collection is as unique as the collector."],
+        "links": [
+            {
+                "text": "Learn about NFT minting",
+                "href": "https://medium.com/tezoscommons/openminter-a-lean-mean-clean-nft-minting-machine-d4e293bb72a4"
+            }
+        ]
+    },
+    {
+        "id": "crypto-kitty",
+        "heading": ["If you want to really unleash your art as an NFT, meet Tezos.*"], 
+        "tags": ["NFTs", "Collectibles"],
+        "body": ["* NFTs on Tezos allow enthusiasts to create permanent collections of the things they care about.", "You’ve probably had a collection before: stamps, baseball cards, or even seashells. Owning NFTs (non-fungible tokens) on Tezos allows you to have irreplaceable, unique digital items of your favorite things: comics, trading cards, musical records, paintings, and anything else you could imagine. And since NFTs cannot be interchanged, each piece has guaranteed scarcity."],
+        "links": [
+            {
+                "text": "The Growing NFT Momentum", 
+                "href": "https://medium.com/tezoscommons/the-growing-nft-momentum-3c32a4bf8c46"
+            },
+            {
+                "text": "Explore the AcuteArt NFT marketplace",
+                "href": "https://www.acutemarket.com/"
+            }
+        ]
+    },
+    {
+        "id": "crypto-vintner",
+        "heading": ["If you raise a glass for conservation, meet Tezos.* "],
+        "tags": ["Sustainability"],
+        "body": ["* Conservationists are using Tezos to build water rights management solutions that can bring more transparency to sustainability efforts.", "Leveraging the Tezos blockchain to track how resources like carbon and water offsets are traded and allocated has the potential for positive and real-world impact."],
+        "links": []
+    }
+]

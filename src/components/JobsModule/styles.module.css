@@ -1,0 +1,49 @@
+.jobsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.comsAndOps {
+    display: flex;
+    flex-direction: row;
+}
+
+.jobsTable {
+    width: 300px;
+    margin: 20px;
+   
+}
+
+.jobsTable th {
+    border: none;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.jobsTable td {
+    font-size: 1.1rem;
+}
+
+.jobsTable tr:nth-child(2n){
+    background-color: transparent;
+}
+
+.jobsTable tr {
+    border: none;
+}
+
+.jobsTable td {
+    border: none;
+}
+
+@media (max-width: 1092px) {
+    .comsAndOps {
+        flex-direction: column;
+    }
+
+    .operationsSpace {
+        display: none;
+    }
+}

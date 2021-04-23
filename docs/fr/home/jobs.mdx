@@ -1,0 +1,35 @@
+---
+id: jobs
+title: Homepage Jobs 
+---
+
+import Wrapper from 'components/Wrapper';
+import JobsModule from 'components/JobsModule';
+import colors from 'src/css/colors.js';
+
+<Wrapper bg={colors.blue} color={colors.white} padded center id="work-interest">
+
+# Désirez-vous travailler à temps plein sur Tezos ?
+
+</Wrapper>
+
+<Wrapper contained id="current-openings">
+
+## Postes actuellement à pourvoir dans l’écosystème Tezos
+
+
+Tezos est un projet open source issu de la collaboration à l’échelle mondiale de nombreux organismes et individus.
+
+Vous souhaitez travailler pour Tezos mais le rôle parfait ne figure pas dans la liste ? Envoyez un email sur la [messagerie Emplois Tezos](mailto:jobsfair@tezos.com) en incluant votre curriculum vitae, ce que vous recherchez et ce qui vous rend impatient de travailler sur Tezos. Les CV sont envoyés à plusieurs organismes de l’écosystème Tezos.
+
+Remarque : les emplois sont référencés par équipe. Si votre organisme recrute et fait partie de l’écosystème Tezos, et que vous souhaitez référencer vos postes à pourvoir ci-dessous, envoyez un email sur la [messagerie Emplois Tezos](mailto:jobsfair@tezos.com).
+
+</Wrapper>
+
+<Wrapper bg={colors.lightestGrey} id='jobs-list'>
+
+<!-- Jobs imported into this module from /src/data/jobs/jobs.json, compiled from Tezos Job Listings - Sheet1.tsv. See README. -->
+
+<JobsModule dev="Développement et ingénierie" coms="Communications et marketing" ops="Opérations"/>
+
+</Wrapper>

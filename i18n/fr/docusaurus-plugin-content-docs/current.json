@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Suivant",
+    "description": "The label for version current"
+  },
+  "sidebar.sitemap.category.Basics": {
+    "message": "Principes fondamentaux",
+    "description": "The label for category Basics in sidebar sitemap"
+  },
+  "sidebar.sitemap.category.Build": {
+    "message": "Développer",
+    "description": "The label for category Build in sidebar sitemap"
+  },
+  "sidebar.sitemap.category.Ecosystem": {
+    "message": "Écosystème",
+    "description": "The label for category Ecosystem in sidebar sitemap"
+  }
+}

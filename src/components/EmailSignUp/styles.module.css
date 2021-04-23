@@ -1,0 +1,78 @@
+.form {
+    position: relative;
+    top: 30px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.signUpContainer {
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.emailField {
+    padding: 4px 8px 8px 8px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    border-radius: 0;
+    color: #FFFFFF;
+    font-size: 13px;
+    width: 100%;
+    min-width: 200px;
+    max-width: 300px;
+    appearance: none;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.submit {
+    cursor: pointer;
+    display: block;
+    color: #FFFFFF;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid #3380EF;
+    border-radius: 25px;
+    padding: 3px 40px;
+    transition: opacity 0.2 ease;
+    opacity: 1;
+}
+
+.submit:focus, .submit:hover {
+    opacity: 0.8;
+}
+
+.inactive, .inactive:hover {
+    opacity: 0.5
+}
+
+.response {
+    position: absolute;
+    margin-top: 25px;
+}
+
+@media (min-width: 997px) {
+    .form {
+        top: 0;
+    }
+    .label {
+        text-align: left;
+        padding-left: 6px;
+    }
+    .signUpContainer {
+        align-items: flex-start;
+        flex-flow: row nowrap;
+    }
+    .emailField {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+}

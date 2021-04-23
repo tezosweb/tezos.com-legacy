@@ -1,0 +1,55 @@
+.heroDevPortal {
+    background: url('/img/hero-background.svg');
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-position: center;
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+html[data-theme="dark"] .heroDevPortal {
+    color: white;
+}
+
+.contributeButtonSection {
+    flex-direction: row-reverse;
+    position: relative;
+    bottom: 5px;
+}
+
+.supportSection {
+    display: flex;
+    flex-direction: row;
+}
+
+.signUp {
+    position: relative;
+    top: 5px;
+    margin-left: 60px;
+    padding-left: 60px;
+    border-left: 1px solid #8f9092;
+    width: 500px;
+}
+
+@media (max-width: 996px) {
+    .heroDevPortal {
+        text-align: center;
+    }
+    .supportSection {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .signUp {
+        width: 0;
+        max-width: 500px;
+        min-width: 250px;
+        text-align: center;
+        border-left: none;
+        margin: 40px auto 0 auto;
+        padding-left: 0;
+        top: 0;
+        border-top: 1px solid #8f9092;
+    }
+}

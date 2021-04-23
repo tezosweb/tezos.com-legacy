@@ -1,0 +1,38 @@
+{
+  "title": {
+    "message": "Tezos",
+    "description": "The title in the navbar"
+  },
+  "item.label.Start Learning": {
+    "message": "Artstay Earninglay",
+    "description": "Navbar item with label Start Learning"
+  },
+  "item.label.Sitemap": {
+    "message": "Itemapsay",
+    "description": "Navbar item with label Sitemap"
+  },
+  "item.label.Blog": {
+    "message": "Ogblay",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Developer Portal": {
+    "message": "Eveloperday Ortalpay",
+    "description": "Navbar item with label Developer Portal"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.Get Started": {
+    "message": "etgay artedstay",
+    "description": "Navbar item with label Get Started"
+  },
+  "item.label.Fork Me On GitHub!": {
+    "message": "upgradeyay emay onyay GitHub!",
+    "description": "Navbar item with label Fork Me On GitHub!"
+  },
+  "item.label.Sign Up For Updates": {
+    "message": "ignsay upyay orfay updatesyay",
+    "description": "Navbar item with label Sign Up For Updates"
+  }
+}

@@ -1,0 +1,245 @@
+
+.signUpPage {
+    background-color: #0F61FF;
+    color: white;
+}
+
+.signUpWrapper {
+    padding: 5% 5%;
+}
+
+.nftContainerOne {
+    display: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 20px;
+    width: 100%;
+    max-width: none !important;
+}
+
+.headingContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.signUpHeader {
+    font-weight: 400;
+    font-size: calc(3.1rem + 1vw);
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+.subHeading {
+    font-size: calc(0.8rem + 1vw)
+}
+
+.signUpWrapper input {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 1px;
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+    color: white;
+    caret-color: white;
+}
+
+.signUpWrapper input::placeholder {
+    color: white;
+}
+
+input:focus {
+    border: 2px solid white !important;
+}
+
+.inputBlock {
+    white-space: nowrap;
+    margin-top: 40px;
+}
+
+.zipcode {
+    margin-top: 15px;
+}
+
+.error {
+    visibility: hidden;
+    margin-left: 10px;
+    padding: 6px;
+    padding-top: 9px;
+    color: red;
+    display: flex;
+    flex-direction: row;
+}
+
+.visible {
+    visibility: visible;
+}
+
+
+.submit {
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    border: 2px solid white;
+    padding: 8px 12px;
+    border-radius: 25px;
+    width: 100%;
+    display: grid;
+}
+
+.submit h3 {
+    margin: 0;
+    font-size: calc(1rem + 0.5vw);
+    font-weight: 400;
+    display: inline-block;
+}
+
+.arrow {
+    background-image: url('/img/campaign/white-arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 4px;
+    width: 50px;
+    height: 20px;
+    display: inline-block;
+}
+
+
+.inactive {
+    opacity: 0.6;
+}
+
+
+.errorMessage{
+    font-weight: 400;
+    font-size: 0.8rem;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+
+.exclamation {
+    color: white;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border-radius: 100%;
+}
+
+.exclamation p {
+    font-weight: 400;
+    position: relative;
+    left: 8px;
+    bottom: 4px;
+    height: 20px;
+    width: 20px;
+}
+
+.errorBox {
+    border: 2px solid red !important;
+}
+
+.asterisk {
+    display: none;
+    color: red;
+    position: relative;
+    bottom: 11px; 
+    left: 5px;
+}
+
+.errorAsterisk {
+    display: inline;
+}
+
+@media(hover:hover) {
+    .active:hover, .active:active {
+        background-color: white;
+        color: #0F61FF;
+        cursor: pointer;
+    }
+    
+    .active:hover .arrow {
+        background-image: url('/img/campaign/blue-arrow.svg');
+    }
+
+}
+
+@media(pointer:coarse) {
+    .active:hover, .active:active {
+        background-color: white;
+        color: #0F61FF;
+    }
+    
+    .active:hover .arrow {
+        background-image: url('/img/campaign/blue-arrow.svg');
+    }
+
+}
+
+@media (max-width: 825px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .signUpHeader {
+        font-size: calc(3.5rem + 1vw);
+        padding: 4%;
+    }
+
+    .subHeading {
+        font-size: calc(1.1rem + 1vw)
+    }
+    .nftContainerOne {
+        display: block;
+    }
+    .nftContainerTwo {
+        display: none;
+    }
+    .underMatter {
+        display: flex;
+        flex-direction: column;
+    }
+    .submit {
+        margin: 0;
+    }
+
+    .submit h3 {
+        font-size: calc(1rem + 0.5vw);
+    }
+    .error {
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+}
+
+
+@media (max-width: 470px) {
+    .signUpHeader {
+        padding: 0;
+        font-size: calc(2.5rem + 1vw);
+    }
+
+    .submit h3 {
+        font-size: calc(0.8rem + 1vw);
+
+    }
+
+    .arrow {
+        top: 2px;
+        width: 40px;
+        height: 15px;
+    }
+}
+
+@media (max-width: 300px) {
+    .signUpHeader {
+        font-size: calc(2.3rem + 1vw);
+    }
+}

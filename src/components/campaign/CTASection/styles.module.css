@@ -1,0 +1,105 @@
+.ctaSectionWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.ctaFade {
+    animation: fade 2s ease;
+}
+
+.leftSection {
+    color: white;
+    background-color: #0F61FF;
+}
+
+.rightSection {
+    background-color: white;
+}
+
+.cta {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-items: center;
+}
+
+.ctaContainer {
+    padding: 10%;
+    max-width: 900px;
+}
+
+.cta h3 {
+    font-weight: 400;
+    margin-bottom: 8%;
+}
+
+.ctaSection {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.arrowWrap {
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    height: 30px;
+    width: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blueArrow {
+    background-image: url('/img/campaign/blue-arrow.svg');
+}
+
+.whiteArrow {
+    background-image: url('/img/campaign/white-arrow.svg');
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+}
+
+@media (min-width: 2240px) {
+    .ctaContainer {
+        max-width: none;
+        padding: 10%;
+    }
+    .ctaContainer h3 {
+        font-size: 3rem;
+    }
+    .ctaButton {
+        font-size: 2rem;
+    }
+    .arrow {
+        height: 60px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 720px) {
+    .ctaSectionWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 360px) {
+    .cta h3 {
+        font-size: calc(0.8rem + 1vw)
+    }
+}
+
+html[data-theme="dark"] .rightSection {
+    background-color: var(--ifm-background-color);
+}

@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "Tezos",
+    "description": "The title in the navbar"
+  },
+  "item.label.Get Started": {
+    "message": "Get Started",
+    "description": "Navbar item with label Get Started"
+  },
+  "item.label.Developer Portal": {
+    "message": "Developer Portal",
+    "description": "Navbar item with label Developer Portal"
+  },
+  "item.label.Fork Me On GitHub!": {
+    "message": "Fork Me On GitHub!",
+    "description": "Navbar item with label Fork Me On GitHub!"
+  },
+  "item.label.Sign Up For Updates": {
+    "message": "Sign Up For Updates",
+    "description": "Navbar item with label Sign Up For Updates"
+  },
+  "item.label.Upgrade Me On GitHub!": {
+    "message": "Upgrade Me On GitHub!",
+    "description": "Navbar item with label Upgrade Me On GitHub!"
+  }
+}

@@ -1,0 +1,39 @@
+.cityConfirm {
+    font-family: 'Roboto Mono', sans-serif;
+    color: white;
+    height: 100%;
+    background-color: #0F61FF;
+    flex: 1 1 auto;
+}
+
+.confirmationWrapper {
+    padding: 5%;
+}
+
+.confirmationHeader {
+    font-weight: 600;
+    font-size: calc(4rem + 1.3vw)
+}
+
+.cityConfirm h1 {
+    font-weight: 400;
+}
+
+.confirmationWrapper h2 {
+    font-weight: 400;
+}
+
+.nftSubheading {
+    font-family: 'Roboto', sans-serif;
+}
+
+.cityConfirm h2 {
+    padding-top: 20px;
+    font-weight: 300;
+}
+
+@media (max-width: 470px) {
+    .confirmationHeader {
+        font-size: calc(3.3rem + 1vw);  
+    }
+}

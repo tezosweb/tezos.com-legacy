@@ -1,0 +1,110 @@
+{
+  "link.title.Docs": {
+    "message": "ocsday",
+    "description": "The title of the footer links column with title=Docs in the footer"
+  },
+  "link.title.Updates & Announcements": {
+    "message": "updatesyay & announcementsyay",
+    "description": "The title of the footer links column with title=Updates & Announcements in the footer"
+  },
+  "link.title.Development": {
+    "message": "evelopmentday",
+    "description": "The title of the footer links column with title=Development in the footer"
+  },
+  "link.title.Community": {
+    "message": "ommunitycay",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.More": {
+    "message": "oremay",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.Start Learning": {
+    "message": "artstay earninglay",
+    "description": "The label of footer link with label=Start Learning linking to docs/learn/what-is-tezos"
+  },
+  "link.item.label.Developer Portal": {
+    "message": "eveloperday ortalpay",
+    "description": "The label of footer link with label=Developer Portal linking to developer-portal"
+  },
+  "link.item.label.Sitemap": {
+    "message": "itemapsay",
+    "description": "The label of footer link with label=Sitemap linking to docs/sitemap/home"
+  },
+  "link.item.label.Twitter": {
+    "message": "Twitter",
+    "description": "The label of footer link with label=Twitter linking to https://twitter.com/tezos"
+  },
+  "link.item.label.Telegram": {
+    "message": "Telegram",
+    "description": "The label of footer link with label=Telegram linking to https://t.me/tezosplatform"
+  },
+  "link.item.label.Slack": {
+    "message": "Slack",
+    "description": "The label of footer link with label=Slack linking to /"
+  },
+  "link.item.label.GitLab": {
+    "message": "GitLab",
+    "description": "The label of footer link with label=GitLab linking to https://gitlab.com/tezos/tezos"
+  },
+  "link.item.label.Stack Exchange": {
+    "message": "Stack Exchange",
+    "description": "The label of footer link with label=Stack Exchange linking to https://tezos.stackexchange.com/"
+  },
+  "link.item.label.Agora": {
+    "message": "Agora",
+    "description": "The label of footer link with label=Agora linking to https://agora.tezos.com/"
+  },
+  "link.item.label.Riot": {
+    "message": "Riot",
+    "description": "The label of footer link with label=Riot linking to https://riot.tzchat.org/"
+  },
+  "link.item.label.Reddit": {
+    "message": "Reddit",
+    "description": "The label of footer link with label=Reddit linking to https://www.reddit.com/r/tezos"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "The label of footer link with label=Blog linking to blog"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/tqtezos/tezos.com"
+  },
+  "link.item.label.Discord": {
+    "message": "Discord",
+    "description": "The label of footer link with label=Discord linking to https://discord.com/invite/udZwhQn"
+  },
+  "copyright": {
+    "message": "Copyright © 2021 Tezos, Inc. uiltbay ithway ocusaurusday.",
+    "description": "The footer copyright"
+  },
+  "link.title.Follow Tezos:": {
+    "message": "Follow Tezos:",
+    "description": "The title of the footer links column with title=Follow Tezos: in the footer"
+  },
+  "link.title.Sign Up For The Tezos Newsletter:": {
+    "message": "Sign Up For The Tezos Newsletter:",
+    "description": "The title of the footer links column with title=Sign Up For The Tezos Newsletter: in the footer"
+  },
+  "link.item.label.Tezos Agora": {
+    "message": "Tezos Agora",
+    "description": "The label of footer link with label=Tezos Agora linking to https://forum.tezosagora.org/"
+  },
+  "link.item.label.Email": {
+    "message": "Email",
+    "description": "The label of footer link with label=Email linking to placeholder"
+  },
+  "link.item.label.Submit": {
+    "message": "Submit",
+    "description": "The label of footer link with label=Submit linking to submit"
+  },
+  "link.item.label.Thank you for subscribing!": {
+    "message": "Thank you for subscribing!",
+    "description": "The label of footer link with label=Thank you for subscribing! linking to success"
+  },
+  "link.item.label.This email address is already subscribed!": {
+    "message": "This email address is already subscribed!",
+    "description": "The label of footer link with label=This email address is already subscribed! linking to duplicate"
+  }
+}

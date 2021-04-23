@@ -1,0 +1,51 @@
+.sideBySide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.sideBySideCards {
+    display: flex;
+    padding: 50px;
+}
+
+.cardOneSection {
+    justify-content: flex-end;
+}
+
+.cardTwoSection {
+    justify-content: flex-start;
+}
+
+.card {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    max-width: 400px;
+    text-align: center;
+}
+
+.card > h2 {
+    font-size: 2rem;
+}
+
+html[data-theme="dark"] .cardOneSection {
+    background-color: rgb(71, 71, 71) !important;
+  }
+
+
+@media (max-width: 1200px) {
+    .card > h2 {
+        font-size: calc(1rem + 1.5vw);
+    }
+}
+ 
+@media (max-width: 900px) {
+    .sideBySide {
+        display: flex ;
+        flex-direction: column;
+    }
+    .sideBySideCards {
+        justify-content: center !important;
+    }
+}

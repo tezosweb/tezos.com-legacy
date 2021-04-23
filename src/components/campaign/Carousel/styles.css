@@ -1,0 +1,48 @@
+.campaign-carousel {
+    opacity: 0;
+    z-index: 5;
+    position: relative;
+    width: 100%;
+    background-color: white;
+    transition: opacity 2.5s;
+}
+
+.nav-carousel {
+    opacity: 0;
+    background-color: white;
+    border-top: 1px solid #d5d6d7;
+    padding-top: 10px;
+    transition: opacity 1.3s;
+}
+
+.nav-carousel .flickity-viewport {
+    width: 0;
+    transition: width 1.3s;
+}
+
+.scrollAnimation {
+    opacity: 1 !important;
+}
+
+.scrollAnimation > .flickity-viewport {
+    width: 100% !important;
+}
+
+
+.fadeAnimation {
+    opacity: 1 !important;
+}
+
+@media (max-width: 667px) {
+    .nav-carousel {
+        border-top:1px solid #d5d6d7;
+    }
+}
+
+html[data-theme="dark"] .campaign-carousel {
+    background-color: var(--ifm-background-color);
+}
+
+html[data-theme="dark"] .nav-carousel {
+    background-color: var(--ifm-background-color);
+}
