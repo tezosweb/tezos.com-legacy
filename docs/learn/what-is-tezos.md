@@ -35,7 +35,7 @@ Tezos提供了一个平台，可以创建智能合约和构建分散的应用程
 
 ## 资源
 
- - [Tezos 白皮书r](../../static/whitepaper.pdf)
+ - [Tezos 白皮书](../../static/whitepaper.pdf)
  - [Tezos 用例](https://wiki.tezosagora.org/learn/uses-of-tezos)
  - [Tezos 共识算法](https://wiki.tezosagora.org/learn/baking/proofofstake/consensus)
  - [Tezos 立场文件](../../static/position-paper.pdf)
