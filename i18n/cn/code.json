@@ -1,0 +1,50 @@
+{
+  "Tezos Developer Portal": {
+    "message": "Tezos开发者门户"
+  },
+  "Developer Support Channels:": {
+    "message": "开发者支持频道:"
+  },
+  "Developer Mailing List:": {
+    "message": "开发者邮件列表"
+  },
+  "Contribute To Dev Portal": {
+    "message": "为开发者门户做贡献！"
+  },
+  "Thank you for subscribing!": {
+    "message": "感谢您的订阅!"
+  },
+  "Legal Copy": {
+    "message": "您正在离开Tezos.com。 提供此链接只是为了方便，仅供参考；提供此链接并不构成TQ的背书或认可，并且TQ对此类其他网站，工具或资源的内容，功能，准确性，合法性，适当性或任何其他方面概不负责。"
+  },
+  "Legal Button": {
+    "message": "继续"
+  },
+  "Sign Up Title": {
+    "message": "Tezos更新"
+  },
+  "Sign Up Description": {
+    "message": "注册以接收有关生态系统开发，工具，新闻以及更新。"
+  },
+  "Sign Up Placeholder": {
+    "message": "你的邮件"
+  },
+  "Sign Up Button": {
+    "message": "注册"
+  },
+  "Sign Up Thank You": {
+    "message": "感谢您的注册！"
+  },
+  "Sign Up Update Text": {
+    "message": "关注实时更新"
+  },
+  "Sign Up Update Link Text": {
+    "message": "推特账号@Tezos"
+  },
+  "Email": {
+    "message": "邮箱"
+  },
+  "Submit": {
+    "message": "提交"
+  }
+}
