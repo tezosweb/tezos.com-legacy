@@ -3,11 +3,11 @@ const path = require('path');
 module.exports = {
   title: 'Tezos',
   tagline: 'The tagline of my site',
-  url: 'https://tezos.com',
+  url: 'http://0.0.0.0:3001',
   baseUrl: '/',
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fr', 'pl'],
+    defaultLocale: 'cn',
+    locales: ['en', 'fr', 'pl', 'cn'],
     localeConfigs: {
       en: {
         label: 'English',
@@ -17,6 +17,9 @@ module.exports = {
       },
       pl: {
         label: 'Igpay Atinlay',
+      },
+      cn: {
+	label: 'Chinese',
       },
     },
   },
