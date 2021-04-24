@@ -4,38 +4,38 @@ title: What Is Tezos?
 sidebar_label: What Is Tezos?
 ---
 
-## The Basics
+## 基础
 
-Tezos is an open-source platform for assets and applications that can evolve by upgrading itself. Stakeholders govern upgrades to the core protocol, including upgrades to the amendment process itself.
+Tezos是资产和应用程序的开源平台，可以通过自身升级来发展。 利益相关者负责核心协议的升级，包括对修订流程本身的升级。
 
-### Self-Amendment
+### 自我修正
 
-Self-amendment allows Tezos to upgrade itself without having to split (“fork”) the network into two different blockchains. This is important as the suggestion or expectation of a fork can divide the community, alter stakeholder incentives, and disrupt the network effects that are formed over time. Because of self-amendment, coordination and execution costs for protocol upgrades are reduced and future innovations can be seamlessly implemented.
+自我修正允许Tezos自行升级，而不必将网络拆分（“分叉”）成两个不同的区块链。这很重要，因为对分叉的建议或期望会导致社区分裂，改变利益相关者的激励机制并破坏随着时间推移而形成的网络效应。由于自我修正，减少了协议升级的协调和执行成本，并且可以无缝地实施未来的创新。
 
-### On-Chain Governance
+###链上治理
 
-In Tezos, all stakeholders can participate in governing the protocol. The election cycle provides a formal and systematic procedure for stakeholders to reach agreement on proposed protocol amendments. By combining this on-chain mechanism with self-amendment, Tezos can change this initial election process to adopt better governance mechanisms when they are discovered.
+在Tezos中，所有利益相关者都可以参与管理协议。选举周期为利益相关者提供了一个正式和系统的程序，以就拟议的议定书修正案达成协议。通过将这种链上机制与自我修正相结合，Tezos可以更改此初始选举过程，以便在发现时采用更好的治理机制。
 
-### Decentralized Innovation
+###分散式创新
 
-Proposed amendments that are accepted by stakeholders can include payment to individuals or groups that improve the protocol. This funding mechanism encourages robust participation and decentralizes the maintenance of the network. Fostering an active, open, and diverse developer ecosystem that is incentivized to contribute to the protocol will facilitate Tezos development and adoption.
+利益相关者接受的拟议修订可以包括向改善协议的个人或团体付款。这种筹资机制鼓励强有力的参与并分散网络的维护。建立积极，开放和多样化的开发人员生态系统，激励其为该协议做出贡献，将促进Tezos的开发和采用。
 
-### Smart Contracts & Formal Verification
+###智能合约和正式验证
 
-Tezos offers a platform to create smart contracts and build decentralized applications that cannot be censored or shut-down by third parties. Furthermore, Tezos facilitates formal verification, a technique used to improve security by mathematically proving properties about programs such as smart contracts. This technique, if used properly, can help avoid costly bugs and the contentious debates that follow.
+Tezos提供了一个平台，可以创建智能合约和构建分散的应用程序，这些应用程序不能被第三方审查或关闭。此外，Tezos促进了形式验证，这是一种用于通过数学证明诸如智能合约之类的程序的属性来提高安全性的技术。如果正确使用此技术，可以帮助避免代价高昂的错误以及随之而来的有争议的辩论。
 
-### Proof-of-Stake (PoS)
+###权益证明（PoS）
 
-Participants (“nodes”) in decentralized, peer-to-peer networks provide the necessary computational resources that keep a network up and running. Proof-of-Stake (PoS) is the mechanism by which the various participants in Tezos reach consensus on the state of the blockchain. Unlike other PoS protocols, any stakeholder can participate in the consensus process in Tezos and be rewarded by the protocol itself for contributing to the security and stability of the network. Additionally, PoS is less costly than other consensus mechanisms and lowers the barriers to entry for involvement.
+分散的对等网络中的参与者（“节点”）提供必要的计算资源，以保持网络的正常运行。权益证明（PoS）是Tezos中各种参与者就区块链状态达成共识的机制。与其他PoS协议不同，任何利益相关者都可以参与Tezos的共识过程，并因为协议本身为网络的安全性和稳定性做出了贡献而受到奖励。此外，与其他共识机制相比，PoS的成本更低，并且降低了参与的准入门槛。
 
-### Delegation
+###代表团
 
-In PoS, a security deposit is required to participate in the consensus process and avoid being diluted by inflation. As in proof-of-work, the consensus protocol relies on an honest majority for its security which is incentivized directly by the Tezos protocol by penalizing dishonest behavior and rewarding honest behavior. If a participant behaves dishonestly, they can lose their deposit. Users who do not wish to participate directly in the consensus protocol have the option to delegate their rights to other users to participate on their behalf.
+在PoS中，需要保证金参加共识过程，并避免因通货膨胀而摊薄。就像在工作量证明中一样，共识协议依靠诚实多数来保证其安全性，而Tezos协议则通过惩罚不诚实的行为并奖励诚实的行为来直接激励共识协议。如果参与者的行为不诚实，他们可能会损失其押金。不希望直接参与共识协议的用户可以选择将其权利委派给其他用户以他们的名义参与。
 
 
-## Resources
+## 资源
 
- - [Tezos White Paper](../../static/whitepaper.pdf)
- - [Tezos Use Cases](https://wiki.tezosagora.org/learn/uses-of-tezos)
- - [Tezos Consensus Algorithm](https://wiki.tezosagora.org/learn/baking/proofofstake/consensus)
- - [Tezos Position Paper](../../static/position-paper.pdf)
+ - [Tezos 白皮书r](../../static/whitepaper.pdf)
+ - [Tezos 用例](https://wiki.tezosagora.org/learn/uses-of-tezos)
+ - [Tezos 共识算法](https://wiki.tezosagora.org/learn/baking/proofofstake/consensus)
+ - [Tezos 立场文件](../../static/position-paper.pdf)
