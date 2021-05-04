@@ -11,7 +11,7 @@ const Wrapper = ({ bg, color, center, right, padded, border, updates, contained,
         marginBottom: '5px',
         border: border && `2px solid ${border}`
     }}
-        className={clsx(styles.wrapper, contained && 'container')}
+        className={clsx(contained && 'container')}
         id={id}
     >
         {children}

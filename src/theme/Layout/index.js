@@ -38,7 +38,7 @@ function Layout(props) {
 
       <div
         className={clsx(
-          'main-wrapper',
+          ThemeClassNames.wrapper.main,
           wrapperClassName,
           pageClassName,
         )}>
