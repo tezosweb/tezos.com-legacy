@@ -4,7 +4,7 @@ title: Store & Use
 sidebar_label: Store & Use
 ---
 
-＃＃ 基础知识
+## 基础知识
 
 持有Tezos令牌（“ tez”）使人们能够与Tezos区块链进行交互。 有很多用于存储和使用tez的钱包。 以下列出的钱包已至少经过了一次独立的外部安全审核。
 
@@ -12,9 +12,9 @@ sidebar_label: Store & Use
 
 **注意：Tezos基金会筹款活动的捐助者可以通过“激活”标签开始**
 
-##钱包
+## 钱包
 
-###软件钱包
+### 软件钱包
 
 - [AirGap](https://airgap.it/ "Airgap")<sup>†</sup> *(iOS, Android, Web)*
 - [Atomex](https://atomex.me/ "Atomex")<sup>†</sup> *(iOS, Android, Windows, macOS, Web)*
