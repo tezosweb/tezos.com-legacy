@@ -26,7 +26,7 @@ function parseHeading(cat) {
 const JobsModule = ({ dev, coms, ops }) => (
     <div className={clsx('container', styles.jobsContainer)}>
         <div className={styles.categoryContainer}>
-            <table className={styles.jobsTable}>
+           {jobs['Development & Engineering'] && (<table className={styles.jobsTable}>
             <thead>
                 <tr>
                     {dev && parseHeading(dev)}
@@ -42,10 +42,10 @@ const JobsModule = ({ dev, coms, ops }) => (
                     </tr>
                 ))}
             </tbody>
-            </table>
+            </table>)}
         </div>
         <div className={styles.comsAndOps}>
-        <table className={styles.jobsTable}>
+        {jobs['Communications & Marketing'] && (<table className={styles.jobsTable}>
             <thead>
                 <tr>
                      {coms && parseHeading(coms)}
@@ -61,8 +61,8 @@ const JobsModule = ({ dev, coms, ops }) => (
                 </tr>
             ))}
             </tbody>
-        </table>
-        <table className={styles.jobsTable}>
+        </table>)}
+        {jobs['Operations'] && (<table className={styles.jobsTable}>
         <thead>
                 <tr>
                     <th>{ops} <div className={styles.operationsSpace}><br /></div></th>
@@ -78,7 +78,7 @@ const JobsModule = ({ dev, coms, ops }) => (
                 </tr>
             ))}
             </tbody>
-        </table>
+        </table>)}
         </div>
     </div>
 );
