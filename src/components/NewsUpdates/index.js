@@ -1,5 +1,4 @@
 import React from 'react'
-import updates from 'src/data/updates/updates.json'
 import ExternalLink from 'components/ExternalLink'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './styles.module.css'
