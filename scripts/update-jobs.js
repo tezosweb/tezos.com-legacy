@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-const data = fs.readFileSync('././src/data/Tezos Job Listings - Sheet1.tsv', 'utf8');
+const langs = fs.readdirSync('././src/data/tsv/jobs');
 
 function jobsParse(data) {
     const parsed = {};
@@ -16,4 +16,7 @@ function jobsParse(data) {
     return parsed;
 };
 
-fs.writeFileSync('././src/data/jobs/jobs.json', JSON.stringify(jobsParse(data)))
+langs.forEach(lang => {
+    const data = fs.readFileSync(`././src/data/tsv/jobs/${lang}`, 'utf-8')
+    fs.writeFileSync(`././src/data/jobs/${lang.split('.')[0]}.json`, JSON.stringify(jobsParse(data)))
+})
