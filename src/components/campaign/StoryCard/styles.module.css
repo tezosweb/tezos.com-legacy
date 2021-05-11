@@ -1,0 +1,416 @@
+.storyContainer {
+    width: 100%;
+    height: auto;
+    min-height: 50vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    border-top: 1px solid #d5d6d7;
+}
+
+.storyImage {
+    min-height: 600px;
+    background-size: cover;
+    background-position: 50% top;
+}
+
+.navSection {
+    display: none;
+}
+
+.story {
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+}
+
+.storyContent {
+    padding: 30px;
+    border-left: 1px solid #d5d6d7
+}
+
+
+.desktopArrowSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease;
+    border-left: 1px solid #d5d6d7;
+}
+
+.desktopArrow {
+    background-image: url('/img/campaign/gradient-arrow.svg');
+    background-position: center;
+    filter: grayscale(1);
+    opacity: 0.5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 40px;
+    padding: 6px;
+    transition: all 0.1s ease;
+}
+
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    border-top: 1px solid #d5d6d7;
+    border-bottom: 1px solid #d5d6d7;
+    transition: all 0.1s;
+}
+
+.arrowImage {
+    padding: 7%;
+    width: 25%;
+}
+
+.greyedArrow {
+    filter: grayscale(1);
+}
+
+.forward {
+    border-left: 1px solid #d5d6d7;
+}
+
+.back img {
+    transform: rotate(180deg)
+}
+
+
+.bulbDecoration {
+    height: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bulbSection {
+    height: 0;
+}
+
+.blank {
+    border-left: 1px solid #d5d6d7;
+}
+
+.bulb {
+    position: relative;
+    right: 7px;
+    bottom: 3px;
+}
+
+.bulb:before {
+    display: block;
+    content:'';
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color:#d5d6d7
+}
+
+.heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(2.5em + 0.5vw);
+    font-weight: 600;
+}
+
+.tags {
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: calc(0.9em + 0.2vw);
+    color: rgb(182, 182, 182);
+}
+
+.tag {
+    display: inline-block;
+    padding-right: 10%;
+}
+
+.body {
+    margin: 10% 0;
+}
+
+.body p {
+    font-size: calc(0.9em + 0.2vw);
+    font-weight: 400;
+}
+
+.link {
+    display: block;
+    padding: 5px 0;
+    font-size: calc(0.9em + 0.1vw);
+    font-family: "Roboto Mono", sans-serif;
+}
+
+.emailCTA {
+    max-width: 300px;
+    margin: 10% 0 0 0;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+.emailCTA h4 {
+    font-weight: 400;
+}
+
+.ctaLink {
+    color: white;
+}
+
+.ctaLink:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.signUpBtn {
+    position: relative;
+    text-align: center;
+    background-image: linear-gradient(90deg, #812780 0%, #0F61FF 100%);
+    padding: 12px 12px;
+    border-radius: 25px;
+    transition: all 0.1s;
+}
+
+.signUpBtn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    padding: 2px;
+    background: linear-gradient(90deg, #812780 0%, #0F61FF 100%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+.signUpBtn h4 {
+    margin: 0;
+}
+
+.signUpBtn:hover, .signUpBtn:active {
+    text-decoration: none;
+    color: black;
+    background-image: none;
+}
+
+
+
+@media(hover:hover) {
+
+    .desktopArrowSection:hover, .desktopArrowSection:active {
+        cursor: pointer;
+        background-color:rgb(241, 241, 241)
+    }
+    
+    .desktopArrowSection:hover .desktopArrow {
+        filter: grayscale(0);
+        opacity: 1;
+    }
+    
+
+    .arrow:hover, .arrow:active {
+        background-color:rgb(233, 233, 233)
+    }
+
+    .ctaLink:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    .signUpBtn:hover, .signUpBtn:active {
+        text-decoration: none;
+        color: black;
+        background-image: none;
+    }
+
+    html[data-theme="dark"] .arrow:hover {
+        background-color: rgb(48, 48, 48)
+    }
+
+    html[data-theme="dark"] .desktopArrowSection:hover {
+        background-color: rgb(48, 48, 48)
+    }
+    
+}
+
+@media(pointer:coarse) {
+    .desktopArrowSection:hover, .desktopArrowSection:active {
+        cursor: pointer;
+        background-color:rgb(241, 241, 241)
+    }
+    
+    .desktopArrowSection:active .desktopArrow {
+        filter: grayscale(0);
+        opacity: 1;
+    }
+
+    .arrow:active {
+        background-color:rgb(233, 233, 233);
+    }
+
+    .ctaLink:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    .signUpBtn:hover, .signUpBtn:active {
+        text-decoration: none;
+        color: black;
+        background-image: none;
+    }
+
+    html[data-theme="dark"] .arrow:hover {
+        background-color: rgb(48, 48, 48)
+    }
+
+    html[data-theme="dark"] .desktopArrowSection:hover {
+        background-color: rgb(48, 48, 48)
+    }
+}
+
+
+@media (min-width: 2150px) {
+    .desktopArrow {
+        width: 105px;
+        height: 60px;
+    }
+    .heading {
+        font-size: 4.3rem;
+    }
+    .emailCTA {
+        max-width: 500px;
+    }
+    .signUpBtn h4, .link, .body p, .tag {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 3200px) {
+
+    .desktopArrow {
+        width: 145px;
+        height: 85px;
+    }
+
+    .heading {
+        font-size: 4.6rem;
+    }
+    .signUpBtn h4, .body p, .tag {
+        font-size: 2.5rem;
+    }
+
+    .link {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .heading {
+        font-size: calc(1.5em + 1.1vw);
+    }
+
+    .body p {
+        font-size: 1em;
+    }
+
+    .tags {
+        font-size: 1em;
+    }
+
+    .link {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 900px) {
+    .storyContainer {
+        min-height: 0;
+    }
+    .storyImageRight {
+        background-position: right top;
+    }
+    .storyImageCR {
+        background-position: 75% center;
+    }
+
+    .body p {
+        font-size: 0.9em;
+    }
+
+    .tags {
+        font-size: 0.8em;
+    }
+
+    .desktopArrow {
+        width: 60px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 720px) {
+
+    .desktopArrowSection {
+        display: none;
+    }
+    .storyContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .storyImage {
+        min-height: 0px;
+        width: 100%;
+        height: 100vw;
+    }
+    .navSection {
+        display: block;
+    }
+    .navigate {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .story {
+        display: flex;
+        flex-direction: column;
+        padding-right: 40px;
+    }
+
+    .body p {
+        font-size: calc(0.5em + 1.5vw);
+    }
+
+    .tags {
+        font-size: calc(0.5em + 1.5vw);
+    }
+    
+    .link {
+        font-size: calc(0.5em + 1.2vw);
+    }
+
+    .emailCTA {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .heading {
+        font-size: calc(1.3rem + 1vw);
+    }
+
+    .signUpBtn h4 {
+        font-size: calc(0.7rem + 1vw);
+    }
+}
+
+
+html[data-theme="dark"] .storyContainer {
+    background-color: var(--ifm-background-color);
+}
+
+html[data-theme="dark"] .signUpBtn:hover {
+    color: white;
+}

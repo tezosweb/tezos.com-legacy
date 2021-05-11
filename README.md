@@ -20,6 +20,19 @@ This command starts a local development server and open up a browser window. Mos
 
 To contribute to this repository, please fork the repo, make your changes, and submit a PR to the ``main`` branch.
 
+## Help Translate
+
+If you would like to help improve our translations, please see the following directories:
+
+```
+docs/<locale>
+i18n/<locale>
+```
+
+The ```.md```, ```.mdx``` and ```.json``` files therein contain all page content.
+
+At the moment, the job listings and news updates do not support localization, given the frequency of updates to these sections (see below).
+
 ## Update Jobs and Tezos Updates sections
 
 Job listings and news updates are obtained from the Marketing department in Google Sheets. These are downloaded as `Tezos Job Listings - Sheet1.tsv` and `Tezos Updates - Sheet1.tsv`, respectively. Once updated files have been added to `src/data`, from the command line:

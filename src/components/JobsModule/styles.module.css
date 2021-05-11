@@ -13,7 +13,7 @@
 .jobsTable {
     width: 300px;
     margin: 20px;
-    display: table;
+   
 }
 
 .jobsTable th {
@@ -41,5 +41,9 @@
 @media (max-width: 1092px) {
     .comsAndOps {
         flex-direction: column;
+    }
+
+    .operationsSpace {
+        display: none;
     }
 }

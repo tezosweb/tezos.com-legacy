@@ -21,7 +21,7 @@ const Hero = ({ heading, subheading, img, buttonOne, buttonTwo }) => (
             </div>
         </div>
         <div className={styles.heroImageContainer}>
-            <img className={styles.heroImage} src={img} />
+            <img draggable="false" className={styles.heroImage} src={img} />
         </div>
     </div>
 )

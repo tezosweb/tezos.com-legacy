@@ -11,7 +11,7 @@
 
 .announcementBar {
   position: relative;
-  width: 100%;
+  width: auto;
   height: var(--docusaurus-announcement-bar-height);
   background: rgb(2,0,36);
   background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(46,110,207,1) 0%, rgba(217,110,245,1) 100%) !important;

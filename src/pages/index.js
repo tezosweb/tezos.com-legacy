@@ -9,29 +9,19 @@ import Wrapper from 'components/Wrapper';
 import Translate from '@docusaurus/Translate';
 import colors from 'src/css/colors';
 
-import Welcome from 'docs/home/welcome.mdx'
-import Jobs from 'docs/home/jobs.mdx'
-import Updates from 'docs/home/updates.mdx'
-import CTASection from 'docs/home/ctasection.mdx'
-
-import MDXHome from 'docs/home.mdx'
-import PLHome from 'docs/pl/home.mdx'
-
-const MDXImports = {
-  home: {
-    '/': (<MDXHome />),
-    '/pl/': (<PLHome />)
-  },
-}
-
 function Home() {
-  const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
+  const {codeTranslations, siteConfig} = useDocusaurusContext();
+
+  const Welcome = require(`../../docs${siteConfig.baseUrl}home/welcome.mdx`).default;
+  const Jobs = require(`../../docs${siteConfig.baseUrl}home/jobs.mdx`).default;
+  const Updates = require(`../../docs${siteConfig.baseUrl}home/updates.mdx`).default;
+  const CTASection = require(`../../docs${siteConfig.baseUrl}home/ctasection.mdx`).default;
+ 
 
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Tezos is an open-source platform for assets and applications backed by a global community of validators, researchers, and builders."
+      description={codeTranslations["Home Meta"]}
       permalink="https://tezos.com">
 
 

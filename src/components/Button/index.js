@@ -13,7 +13,8 @@ const Button = ({
         newsletter,  
         submitCB, 
         validEmail, 
-        closeModal }) => {
+        closeModal,
+        signUpCampaign }) => {
     if (newsletter) {
         return (
             <NewletterSignUp.Consumer>
@@ -38,7 +39,8 @@ const Button = ({
         if (href.slice(0,4) === 'http') {
                     return (
                         <a 
-                            className={clsx(styles.buttonPrimary, 
+                            className={clsx(!signUpCampaign && styles.buttonPrimary, 
+                                        signUpCampaign && styles.campaignBtn,
                                         inverse && styles.inverse,
                                         whiteAndBlue && styles.whiteAndBlue,
                                         devPortal && styles.devPortal)}

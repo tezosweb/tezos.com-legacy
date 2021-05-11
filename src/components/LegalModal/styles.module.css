@@ -11,6 +11,10 @@
     transition: all 0.5s;
 }
 
+.buttonWrap {
+    width: 100%;
+}
+
 .modal {
   position: fixed;
   top: 200px;
@@ -28,21 +32,22 @@
 }
 
 .modalWrap {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: none;
     background-color: #fff;
-    padding: 50px 20px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    padding: 50px 50px 40px 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
     max-width: 600px;
+
 }
 
 .modalWrap p {
     margin-bottom: 30px;
     opacity: 0.7;
     line-height: 1.6;
-    font-size: 1.2rem;
+    font-size: calc(0.6rem + 0.8vw);
 }
 
 .modalWrap .buttonWrap {
@@ -92,13 +97,34 @@
     transform: translateY(-50%) translateX(-50%) rotate(45deg);
 }
 
-@media screen and (min-width: 768px) {
+.closeCampaign {
+    background-color: transparent;
+    border: none;
+}
+
+.legalText {
+    margin-bottom: 0;
+}
+
+.campaignCopy {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 900px) {
+    .modalWrap p {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 730px) {
     .modalWrap {
-      padding: 50px 50px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translateY(-50%) translateX(-50%);
+        padding: 45px 30px 30px 30px;
+        width: 80%;
+    }
+    .buttonWrap {
+        font-size: 0.9rem;
     }
 }
 

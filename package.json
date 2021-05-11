@@ -15,14 +15,17 @@
     "updates": "node scripts/update-jobs.js && node scripts/update-updates.js"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-alpha.72",
-    "@docusaurus/preset-classic": "2.0.0-alpha.72",
+    "@docusaurus/core": "^2.0.0-alpha.75",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.75",
     "@mdx-js/react": "^1.6.21",
     "clsx": "^1.1.1",
     "email-validator": "^2.0.4",
+    "flickity": "^2.2.2",
+    "flickity-as-nav-for": "^2.0.1",
     "jsonp": "^0.2.1",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "react-flickity-component": "^3.6.1"
   },
   "browserslist": {
     "production": [

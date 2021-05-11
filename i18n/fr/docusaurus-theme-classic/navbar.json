@@ -4,19 +4,23 @@
     "description": "The title in the navbar"
   },
   "item.label.Get Started": {
-    "message": "Get Started",
+    "message": "Premiers pas",
     "description": "Navbar item with label Get Started"
   },
   "item.label.Developer Portal": {
-    "message": "Developer Portal",
+    "message": "Portail développeurs",
     "description": "Navbar item with label Developer Portal"
   },
   "item.label.Fork Me On GitHub!": {
-    "message": "Fork Me On GitHub!",
+    "message": "Créer un fork de cette page sur GitHub !",
     "description": "Navbar item with label Fork Me On GitHub!"
   },
   "item.label.Sign Up For Updates": {
-    "message": "Sign Up For Updates",
+    "message": "S’abonner aux mises à jour",
     "description": "Navbar item with label Sign Up For Updates"
+  },
+  "item.label.Upgrade Me On GitHub!": {
+    "message": "Créer un fork de cette page sur GitHub !",
+    "description": "Navbar item with label Upgrade Me On GitHub!"
   }
 }

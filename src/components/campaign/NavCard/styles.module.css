@@ -1,0 +1,21 @@
+.navCardWrapper {
+    padding: 0px 10px 10px 10px;
+}
+
+.navCard {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+}
+
+.selector {
+    width: 150px;
+    height: 10px;
+    margin-top: 10px;
+    background-image: linear-gradient(90deg, #812780 0%, #0F61FF 100%);
+    filter: grayscale(1);
+}
+
+.selected {
+    filter: grayscale(0);
+}

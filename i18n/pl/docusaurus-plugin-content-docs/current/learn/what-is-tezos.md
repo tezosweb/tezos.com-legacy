@@ -35,7 +35,7 @@ inyay ospay , ayay ecuritysay epositday isyay equiredray otay articipatepay inya
 
 ## esourcesray
 
- - [ezostay itewhay aperpay](../../static/whitepaper.pdf)
+ - [ezostay itewhay aperpay](https://tezos.com/whitepaper.pdf)
  - [ezostay useyay asescay](https://wiki.tezosagora.org/learn/uses-of-tezos)
  - [Tezos Consensus Algorithm](https://wiki.tezosagora.org/learn/baking/proofofstake)
- - [ezostay onsensuscay algorithmyay](../../static/position-paper.pdf)
+ - [ezostay onsensuscay algorithmyay](https://tezos.com/position-paper.pdf)

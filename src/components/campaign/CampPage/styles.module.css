@@ -1,0 +1,340 @@
+.heroSection {
+    position: relative;
+}
+
+.campaignHero, .helloHero {
+    padding: 5% 17% 2% 17%;
+}
+
+.backgroundGrid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    z-index: -15;
+    height: calc(100vh + 200px);
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.coverGridFiller {
+    position: relative;
+}
+
+.coverGrid {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    background-color: white;
+    height: 70vh;
+    width: 50%;
+    z-index: -10;
+}
+
+.bgArea {
+    border-right:1px solid #d5d6d7;
+    height: 100%;
+}
+
+.lineDrop {
+    animation: drop 5s ease;
+}
+
+.lineDropSlow {
+    animation: dropDelay 6s ease;
+}
+
+.lineDropFast {
+    animation: drop 3s ease;
+}
+
+.heroText {
+    position: relative;
+    top: 0;
+}
+
+.heroTextFade {
+    animation: fade 3s ease;
+}
+
+.smallGrid {
+    height: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+.bulb {
+    position: relative;
+    right: 7px;
+    bottom: 1px;
+}
+
+
+.bulb:before {
+    position: relative;
+    display: block;
+    content:'';
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color:#d5d6d7;
+    animation: widen 7s ease;
+}
+
+.campaignHero h1 {
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 6.4em;
+    font-weight: 400;
+}
+
+.helloHero h1 {
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 5em;
+    font-weight: 400;
+}
+
+
+.heroUnderline {
+    padding-bottom: 5px;
+    background-image: linear-gradient(90deg, #812780 0%, #0F61FF 100%);
+    background-size: 100% 5%;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+}
+
+
+.subHead {
+    position: relative;
+    left: 0;
+    border-top: 1px solid #d5d6d7;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.subHeadExpand {
+    animation: expandHoriz 2s linear;
+}
+
+
+.filler {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.expectSection {
+    font-family: "Roboto Mono", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.expectFade {
+    animation: fadeDelay 5s ease;
+}
+
+.expect, .helloExpect {
+    margin: 9%;
+    font-weight: 400;
+}
+
+@keyframes expandHoriz {
+    0% {
+        left: -100%;
+    }
+    30% {
+        left: -100%;
+    }
+}
+
+@keyframes fadeDelay {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        top: 80px;
+    }
+}
+
+@keyframes drop {
+    0% {
+        height: 0;
+    }
+}
+
+@keyframes dropDelay {
+    0% {
+        height: 0;
+    }
+
+    25% {
+        height: 0;
+    }
+}
+
+@keyframes widen {
+    0% {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        left: 15px;
+    }
+    30% {
+        opacity: 0.5;
+        width: 0;
+        height: 0;
+        left: 8px;
+    }
+    100% {
+        opacity: 1;
+        width: 12px;
+        height: 12px;
+        left: 0;
+    }
+}
+
+
+@media (min-width: 2320px) {
+    .campaignHero, .helloHero {
+        padding: 5% 10% 2% 10%
+    }
+
+    .helloExpect {
+        font-size: 2rem;
+    }
+
+    .expect {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .campaignHero h1 {
+        font-size: calc(4.9rem + 1.5vw);
+    }
+
+    .helloHero h1 {
+        font-size: calc(3.9rem + 1.5vw);
+    }
+}
+
+@media (max-width: 850px) {
+    .expect {
+        font-size: calc(0.6rem + 1vh);
+    }
+}
+
+@media (max-width: 667px) {
+    .campaignHero h1 {
+        font-size: calc(3.5rem + 1.5vw);
+    }
+    .helloHero h1 {
+        font-size: calc(3rem + 1.5vw);
+    }
+    .campaignHero, .helloHero {
+        padding-bottom: 10%;
+    }
+
+    .smallGrid {
+        background-color: transparent;
+    }
+
+    .desktopGrid {
+        display: none;
+    }
+
+    .coverGrid {
+        left: 0;
+        width: 100%;
+    }
+    .subHead {
+        display: flex;
+        justify-content: center;
+    }
+    .filler {
+        display: none;
+    }
+    .expectSection {
+        width: 100%;
+        
+    }
+    .expect {
+        padding: 1%;
+        margin: 5%;
+        font-size: calc(0.9rem + 1vw)
+    }
+
+    .helloExpect {
+        font-size: calc(0.7rem + 1vw);
+        margin: 4%;
+    }
+
+    .bgArea1, .bgArea2 {
+        display: none;
+    }
+
+    .backgroundGrid, .smallGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .smallGrid {
+        height: 50px;
+    }
+
+    .coverGrid {
+        top: -50px;
+    }
+
+    
+}
+
+html[data-theme="dark"] .coverGrid {
+    background-color: var(--ifm-background-color)
+}
+
+@media (max-width: 420px) {
+    .campaignHero, .helloHero {
+        padding: 7% 10%;
+    }
+
+    .campaignHero h1 {
+        font-size: calc(2.9rem + 1vw)
+    }
+
+    .helloHero h1 {
+        font-size: calc(2rem + 1vw)
+    }
+
+    .expect {
+        font-size: calc(0.7rem + 0.6vw)
+    }
+
+    .helloExpect {
+        font-size: calc(0.5rem + 0.6vw)
+    }
+}
+
+@media (max-width: 300px) {
+    .campaignHero h1 {
+        font-size: calc(2.2rem + 1.2vw)
+    }
+
+    .helloHero h1 {
+        font-size: calc(2rem + 1.2vw)
+    }
+
+    .helloExpect {
+        font-size: 0.8rem;
+        padding: 4%;
+    }
+}
+

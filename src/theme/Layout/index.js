@@ -14,11 +14,13 @@ import Footer from '@theme/Footer';
 import LayoutProviders from '@theme/LayoutProviders';
 import LayoutHead from '@theme/LayoutHead';
 import useKeyboardNavigation from '@theme/hooks/useKeyboardNavigation';
+import {ThemeClassNames} from '@docusaurus/theme-common/src/utils/ThemeClassNames';
 import ModalsWrapper from 'components/ModalsWrapper';
 import './styles.css'
+import '../../../node_modules/flickity/css/flickity.css'
 
 function Layout(props) {
-  const {children, noFooter, wrapperClassName} = props;
+  const {children, noFooter, wrapperClassName, pageClassName, signUpCampaign, legal} = props;
 
   useKeyboardNavigation();
 
@@ -28,15 +30,22 @@ function Layout(props) {
 
       <SkipToContent />
 
-      <ModalsWrapper>
+      <ModalsWrapper signUpCampaign={signUpCampaign} legal={legal}>
 
       <AnnouncementBar />
 
       <Navbar />
 
-      <div className={clsx('main-wrapper', wrapperClassName)}>{children}</div>
+      <div
+        className={clsx(
+          ThemeClassNames.wrapper.main,
+          wrapperClassName,
+          pageClassName,
+        )}>
+        {children}
+      </div>
 
-      {!noFooter && <Footer/>}
+      {!noFooter && <Footer signUpCampaign={signUpCampaign}/>}
 
       </ModalsWrapper>
     </LayoutProviders>
@@ -44,3 +53,4 @@ function Layout(props) {
 }
 
 export default Layout;
+

@@ -12,6 +12,7 @@ const colors = {
     darkBlue: '#123262',
     darkerBlue: '#1A2734',
     blue: '#3380EF',
+    campaignGradient: "linear-gradient(90deg, #812780 0%, #0F61FF 100%)"
   }
 
 export default colors

@@ -9,6 +9,35 @@
     white-space: nowrap;
 }
 
+.campaignBtn {
+    color: white;
+    width: 100%;
+    font-family: 'Roboto Mono', sans-serif;
+    position: relative;
+    text-align: center;
+    background-image: linear-gradient(90deg, #812780 0%, #0F61FF 100%);
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.1s;
+}
+
+.campaignBtn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    padding: 2px;
+    background: linear-gradient(90deg, #812780 0%, #0F61FF 100%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
 .inverse {
     background-color: white;
     color: black;
@@ -45,21 +74,49 @@ html[data-theme="dark"] .inverse {
     border: 2px solid #3380EF;
 }
 
-.buttonPrimary:hover, .inactive {
-    color: white;
-    text-decoration: none;
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-.inverse:hover {
-    color: black;
-}
-
-.whiteAndBlue:hover {
-    color: #3380EF;
-}
-
 .wideBtn {
     width: 100%;
+}
+
+@media(hover:hover) {
+    .buttonPrimary:hover, .inactive {
+        color: white;
+        text-decoration: none;
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    
+    .inverse:hover {
+        color: black;
+    }
+
+    .whiteAndBlue:hover {
+        color: #3380EF;
+    }
+    .campaignBtn:hover {
+        text-decoration: none;
+        color: black;
+        background-image: none;
+    }
+}
+
+@media(pointer:coarse) {
+    .buttonPrimary:hover, .inactive {
+        color: white;
+        text-decoration: none;
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    
+    .inverse:hover {
+        color: black;
+    }
+    .campaignBtn:hover {
+        text-decoration: none;
+        color: black;
+        background-image: none;
+    }
+    .whiteAndBlue:hover {
+        color: #3380EF;
+    }
 }

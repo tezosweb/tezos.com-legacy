@@ -7,7 +7,7 @@ module.exports = {
   baseUrl: '/',
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'fr', 'pl'],
+    locales: ['en', 'fr'],
     localeConfigs: {
       en: {
         label: 'English',
@@ -15,32 +15,36 @@ module.exports = {
       fr : {
         label: 'Français'
       },
-      pl: {
-        label: 'Igpay Atinlay',
-      },
     },
   },
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/icon.png',
+  favicon: 'img/tez.svg',
   organizationName: 'tqtezos', // Usually your GitHub org/user name.
   projectName: 'tezos.com', // Usually your repo name.
   themeConfig: {
-    image: 'img/Tezos_MetaImage.png',
+    image: 'img/Tezos_MetaImage.jpg',
+    colorMode: {
+      switchConfig: {
+        lightIcon: ' ',
+        darkIcon: ' ',
+      }
+    },
     gtag: {
       trackingID: 'GTM-5FGG778',
       anonymizeIP: true,
     },
     announcementBar: {
       id: 'supportus',
+      isCloseable: true,
       content:
-        '💡 We\'re in the process of a site redesign. Give us your input on <a target="_blank" rel="noopener noreferrer" href="https://github.com/tqtezos/tezos.com">GitHub</a>! 💡',
+      '💡 We\'re in the process of a site redesign. Give us your input on <a target="_blank" rel="noopener noreferrer" href="https://github.com/tqtezos/tezos.com">GitHub</a>! 💡',
     },
     navbar: {
       title: 'Tezos',
       logo: {
-        alt: 'Tezos Logo',
-        src: 'img/logo-tezos.svg',
+        src: 'img/tezos-logo.svg',
+        srcDark: 'img/tezos-logo-white.svg'
       },
       items: [
         {
@@ -54,9 +58,13 @@ module.exports = {
           label: 'Developer Portal',
           position: 'left'
         },
+        /* {
+          type: 'localeDropdown',
+          position: 'right'
+        }, */
         {
           href: 'https://github.com/tqtezos/tezos.com',
-          label: 'Fork Me On GitHub!',
+          label: 'Upgrade Me On GitHub!',
           className: 'fork-on-github',
           position: 'right',
         },
@@ -64,14 +72,8 @@ module.exports = {
           href: 'email',
           label: 'Sign Up For Updates',
           position: 'right'
-        }
+        }, 
       ],
-    },
-    colorMode: {
-      switchConfig: {
-        lightIcon: ' ',
-        darkIcon: ' ',
-      }
     },
     footer: {
       style: 'dark',
@@ -144,8 +146,10 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/tqtezos/tezos.com/tree/main',
+          editUrl: ({locale, docPath}) => {
+            if (locale === 'en') return `https://github.com/tqtezos/tezos.com/tree/main/docs/${docPath}`
+            else return `https://github.com/tqtezos/tezos.com/tree/main/i18n/${locale}/docusaurus-plugin-content-docs/current/${docPath}`
+          }
         },
         blog: {
           showReadingTime: true,

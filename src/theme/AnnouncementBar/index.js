@@ -9,6 +9,7 @@
  import clsx from 'clsx';
  import {useThemeConfig} from '@docusaurus/theme-common';
  import useUserPreferencesContext from '@theme/hooks/useUserPreferencesContext';
+ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
  import {translate} from '@docusaurus/Translate';
  
  import styles from './styles.module.css';
@@ -19,6 +20,7 @@
      closeAnnouncementBar,
    } = useUserPreferencesContext();
    const {announcementBar} = useThemeConfig();
+   const {codeTranslations} = useDocusaurusContext();
  
    if (!announcementBar) {
      return null;
@@ -40,7 +42,7 @@
          })}
          // Developer provided the HTML, so assume it's safe.
          // eslint-disable-next-line react/no-danger
-         dangerouslySetInnerHTML={{__html: content}}
+         dangerouslySetInnerHTML={{__html: codeTranslations["Announcement Bar"] || content}}
        />
        {isCloseable ? (
          <button

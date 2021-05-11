@@ -4,13 +4,32 @@ import styles from './styles.module.css'
 import jobs from '../../data/jobs/jobs.json'
 import ExternalLink from 'components/ExternalLink'
 
-const JobsModule = () => (
+function parseHeading(cat) {
+    let secondSpaceIdx = -1;
+    for (let i = 0; i < cat.length; i++) {
+        if (cat[i] === ' ' && cat.indexOf(' ') !== i) {
+            secondSpaceIdx = i;
+            break;
+        }
+    }
+
+    return (
+        <th>
+            {cat.slice(0, secondSpaceIdx)}
+            <br />
+            {cat.slice(secondSpaceIdx + 1)}
+        </th>
+    )
+
+}
+
+const JobsModule = ({ dev, coms, ops }) => (
     <div className={clsx('container', styles.jobsContainer)}>
         <div className={styles.categoryContainer}>
-            <table className={styles.jobsTable}>
+           {jobs['Development & Engineering'] && (<table className={styles.jobsTable}>
             <thead>
                 <tr>
-                    <th>Development & <br /> Engineering</th>
+                    {dev && parseHeading(dev)}
                 </tr>
             </thead>
             <tbody>
@@ -23,13 +42,13 @@ const JobsModule = () => (
                     </tr>
                 ))}
             </tbody>
-            </table>
+            </table>)}
         </div>
         <div className={styles.comsAndOps}>
-        <table className={styles.jobsTable}>
+        {jobs['Communications & Marketing'] && (<table className={styles.jobsTable}>
             <thead>
                 <tr>
-                    <th>Communications & <br /> Marketing</th>
+                     {coms && parseHeading(coms)}
                 </tr>
             </thead>
             <tbody>
@@ -42,11 +61,11 @@ const JobsModule = () => (
                 </tr>
             ))}
             </tbody>
-        </table>
-        <table className={styles.jobsTable}>
+        </table>)}
+        {jobs['Operations'] && (<table className={styles.jobsTable}>
         <thead>
                 <tr>
-                    <th>Operations</th>
+                    <th>{ops} <div className={styles.operationsSpace}><br /></div></th>
                 </tr>
             </thead>
             <tbody>
@@ -59,7 +78,7 @@ const JobsModule = () => (
                 </tr>
             ))}
             </tbody>
-        </table>
+        </table>)}
         </div>
     </div>
 );

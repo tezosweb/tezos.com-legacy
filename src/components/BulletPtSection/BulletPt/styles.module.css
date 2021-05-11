@@ -6,8 +6,12 @@
     justify-content: center;
     text-align: center;
 }
-.bulletGroup > h3 {
+.bulletGroup  h3 {
     font-size: 1.5em;
+}
+
+.bulletGroup p {
+    font-size: 1rem;
 }
 
 .icon {
@@ -29,3 +33,4 @@ html[data-theme="dark"] .icon {
     filter: invert(0.9);
     border: 2px solid #6e5c34;
 }
+

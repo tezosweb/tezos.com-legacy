@@ -9,7 +9,7 @@
  import clsx from 'clsx';
  
  import Link from '@docusaurus/Link';
- import {useThemeConfig} from '@docusaurus/theme-common';
+ import {FooterLinkItem, useThemeConfig} from '@docusaurus/theme-common';
  import useBaseUrl from '@docusaurus/useBaseUrl';
  import styles from './styles.module.css';
  import ThemedImage, {Props as ThemedImageProps} from '@theme/ThemedImage';
@@ -43,7 +43,7 @@
    <ThemedImage className="footer__logo" alt={alt} sources={sources} />
  );
  
- function Footer() {
+ function Footer({ signUpCampaign }) {
    const {footer} = useThemeConfig();
  
    const {copyright, links = [], logo = {}} = footer || {};
@@ -85,11 +85,12 @@
               </div>
               <div className={clsx('col', styles.footerCol)}>
               <EmailSignUp
-                label={email.title}
-                placeholder={email.items[0].label}
-                buttonLabel={email.items[1].label}
-                success={email.items[2].label}
-                duplicate={email.items[3].label}
+                  label={email.title}
+                  placeholder={email.items[0].label}
+                  buttonLabel={email.items[1].label}
+                  success={email.items[2].label}
+                  duplicate={email.items[3].label}
+                  signUpCampaign={signUpCampaign}
                 />
               </div>
             </div>

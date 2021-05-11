@@ -18,5 +18,9 @@
   "item.label.Sign Up For Updates": {
     "message": "Sign Up For Updates",
     "description": "Navbar item with label Sign Up For Updates"
+  },
+  "item.label.Upgrade Me On GitHub!": {
+    "message": "Upgrade Me On GitHub!",
+    "description": "Navbar item with label Upgrade Me On GitHub!"
   }
 }

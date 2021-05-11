@@ -69,6 +69,7 @@
      if (windowSize === windowSizes.desktop) {
        setSidebarShown(false);
      }
+
    }, [windowSize]);
  
    const hasSearchNavbarItem = items.some((item) => item.type === 'search');

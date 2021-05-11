@@ -7,6 +7,7 @@
 
 /* You can override the default Infima variables here. */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 :root {
   --ifm-color-primary: #3380EF;
@@ -60,6 +61,7 @@ html[data-theme='dark'] .header-github-link:before {
 .fork-on-github {
   background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(46,110,207,1) 0%, rgba(217,110,245,1) 100%);
   margin-right: 10px;
+  margin-left: 15px;
   color: white;
   border-radius: 5px;
 }
@@ -72,6 +74,7 @@ html[data-theme='dark'] .header-github-link:before {
 
 .menu__list .fork-on-github {
   margin-right: 0;
+  margin-left: 0;
 }
 
 /* Fonts */
@@ -99,6 +102,7 @@ p {
   font-size: 4.2rem;
 }
 
+
 @media (max-width: 1200px) {
     .heroTitle {
       font-size: calc(3rem + 1.2vw);
@@ -111,8 +115,27 @@ p {
    }
 }
 
-@media (max-width: 350px) {
+
+/* NavBar Logo fixes */
+
+.navbar__logo {
+  margin-right: 0;
+}
+
+.navbar__title {
+  display: none;
+}
+
+.navbar__brand {
+  height: 2.5rem;
+}
+
+@media (max-width: 375px) {
   .heroTitle {
       font-size: 3em;
+  }
+
+  #key-barriers {
+    padding: 5% !important;
   }
 }

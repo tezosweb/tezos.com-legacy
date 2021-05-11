@@ -1,0 +1,23 @@
+{
+    "metaTitle": "Hello World",
+    "metaDescription": "You’ve heard about blockchains and NFTs. Maybe you’re exploring crypto and DeFi. World, meet the Tezos blockchain.",
+    "legalCopy": "Hello World Copy",
+    "heroHeading": "World, meet the Tezos blockchain. Imagine what you can do.*",
+    "subTitle": "* Or build, explore, play, collect, preserve.",
+    "explainer": {
+        "heading": "You've probably heard about blockchains and NFTs.",
+        "body": ["Maybe you’re starting to explore cryptocurrency. Chances are, you'll interact with this technology without even realizing it. Right now — this very minute — artists, conservationists, entrepreneurs, collectors, game developers, comic book fans, people who want to move value across the world without roadblocks — people like you — are imagining how to build, create, and use Tezos in new and unexpected ways. Let these stories serve as a starting point as you explore how people are re-imagining the world around you on Tezos."]
+    },
+    "cta": {
+        "sectionOne": {
+            "heading": "From smart money to NFTs, keep in touch with the latest advancements on Tezos.",
+            "buttonText": "Join the mailing list",
+            "href": "/hello-world/sign-up"
+        },
+        "sectionTwo": {
+            "heading": "People around the world are contributing to the growth of the Tezos ecosystem.",
+            "buttonText": "Share what you’re building",
+            "href": "mailto:reachout@tezos.com"
+        }
+    }
+}

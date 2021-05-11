@@ -1,6 +1,6 @@
 ---
 id: welcome
-title: Homepage Welcome 
+title: Bienvenue
 ---
 
 import Button from 'components/Button';
@@ -11,44 +11,44 @@ import colors from 'src/css/colors.js';
 
 
 <Hero
-    heading='Security focused. Upgradable. Built to last.'
-    subheading='Tezos is an open-source platform for assets and applications backed by a global community of validators, researchers, and builders.'
-    img='img/logo-tezos.svg'
+    heading='Axé sur la sécurité. Évolutif. Durable.'
+    subheading='Tezos est une plate-forme open source d’actifs et d’applications. Elle est soutenue par une communauté mondiale de validateurs, chercheurs et développeurs.'
+    img='img/tez.svg'
     buttonOne={{
-        text: 'Access Developer Portal',
+        text: 'Accéder au Portail développeurs',
         href: '/developer-portal'
     }}
     buttonTwo={{
-        text: 'Get Started',
+        text: 'Premiers pas',
         href: 'docs/learn/get-started'
     }}
 />
 
 <Wrapper bg={colors.lightGrey} padded center id="key-barriers">
 
-## Tezos addresses key barriers facing blockchain adoption to date: smart contract safety, long-term upgradability, and open participation.
+## Tezos aborde les principaux obstacles à l’adoption de la blockchain : sécurité des contrats intelligents, évolutivité sur le long terme et participation ouverte à tous.
 
 </Wrapper>
 
 <BulletPtSection
     bulletPts={[
         {
-            heading: 'Secure, Institutional Grade Smart Contracts',
-            text: 'Tezos is designed to provide the safety and code correctness required for assets and other high value use cases. Its native smart contract language, Michelson, facilitates formal verification, a methodology commonly used in mission-critical environments such as the aerospace, nuclear, and semiconductor industries.',
+            heading: 'Contrats intelligents sécurisés et de qualité institutionnelle',
+            text: 'Tezos est conçu pour assurer la sécurité et l’exactitude du code nécessaires aux actifs et aux cas d’utilisation de grande valeur. Michelson, le langage natif de contrats intelligents de Tezos, facilite la vérification formelle, une méthodologie utilisée communément dans les industries stratégiques comme l’aéronautique, le nucléaire et les semi-conducteurs.',
             img: '/img/icons/smartcontract.svg',
-            alt: 'Smart Contracts'
+            alt: 'Contrats intelligents'
         },
         {
-            heading: 'Upgradable to the State of the Art',
-            text: `Tezos’ modular architecture and formal upgrade mechanism allow the network to propose and adopt new technological innovations smoothly as they emerge. These aspects, combined with Tezos’ on-chain invoicing mechanism, enable the protocol to remain the state-of-the-art long into the future — without sacrificing community consensus.`,
+            heading: 'Évolutif et à la pointe',
+            text: `L’architecture modulaire et le système de mise à niveau formel de Tezos rendent le réseau capable de proposer et d’adopter facilement les innovations technologiques dès leur apparition. Combinés au système de facturation on-chain, ces aspects permettent au protocole de rester à la pointe sur le long terme, sans sacrifier le consensus de la communauté.`,
             img: '/img/icons/future.svg',
-            alt: 'Upgradable'   
+            alt: 'Évolutif'   
         },
         {
-            heading: 'Open Participation and Incentive Alignment',
-            text: 'In Tezos, all stakeholders may participate in network upgrades by evaluating, proposing, or approving amendments. Unlike in Proof-of-Work and other Proof-of-Stake networks, all stakeholders can help to secure the network (via baking or delegating), and avoid being diluted by inflation.',
+            heading: 'Participation ouverte à tous et motivations convergentes',
+            text: ' Dans Tezos, toutes les parties prenantes peuvent participer aux mises à niveau du réseau en évaluant, proposant ou approuvant les amendements. Contrairement à ce qui se passe avec la preuve de travail et dans d’autres réseaux utilisant la preuve d’enjeu, toutes les parties prenantes ont la possibilité de contribuer à sécuriser le réseau (au moyen du baking ou de la délégation) et donc d’éviter la dilution par inflation.',
             img: '/img/icons/network.svg',
-            alt: 'State of the Art'   
+            alt: 'À la pointe'   
         }
     ]}
 />

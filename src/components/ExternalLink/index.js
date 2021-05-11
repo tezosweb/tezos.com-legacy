@@ -1,11 +1,12 @@
 import React from 'react'
 import { ModalContext } from 'context/legal-modal-context'
 
-function ExternalLink({ text, link, children }) {
+function ExternalLink({ text, link, className, children }) {
     return (
         <ModalContext.Consumer>
             {({ openModal }) => (
               <a  
+                className={className}
                 href={link}
                 target="_blank"
                 onClick={(e) => {

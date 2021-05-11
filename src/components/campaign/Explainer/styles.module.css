@@ -1,0 +1,162 @@
+.explainerWrap {
+    position: relative;
+    border-top: 1px solid #d5d6d7;
+    padding: 75px 75px 150px 75px;
+    height: auto;
+    overflow: hidden;
+    border-bottom: 1px solid #d5d6d7;
+    background-color: white;
+}
+
+.explainerTop {
+    max-height: 360px;
+}
+
+.explainerFade {
+    animation: fade 2s ease;
+}
+
+.explainerWrap h2, .revealed h2 {
+    font-weight: 600;
+    padding-bottom: 4%;
+}
+
+.explainerText p {
+    font-size: 1.45rem;
+}
+
+.toggleDiv {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.8) 15%, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 1) 50%);
+}
+
+.expand {
+    animation: expand 1s ease;
+    max-height: 120vh;
+}
+
+.retract {
+    animation: retract 1s ease;
+    animation-delay: 0s;
+    max-height: 360px;
+}
+
+.toggleDiv img, .toggleDiv p {
+    position: relative;
+}
+
+.toggleDiv p {
+    font-weight: 600;
+}
+
+.toggleDiv:hover {
+    cursor: pointer;
+}
+
+.toggleDiv:hover img {
+    bottom: 2px;
+}
+
+.toggleDiv:hover p {
+    bottom: 2px;
+}
+
+.toggleArrow {
+    width: 40px;
+}
+
+.upArrow {
+    transform: rotate(-90deg);
+}
+
+.downArrow {
+    transform: rotate(90deg);
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+}
+
+@keyframes expand {
+    0% {
+        max-height: 360px;
+    }
+}
+
+@keyframes retract {
+    0% {
+        max-height: 120vh
+    }
+}
+
+@media (min-width: 2150px) {
+    @keyframes expand {
+        0% {
+            max-height: 500px;
+        }
+    }
+
+    @keyframes retract {
+        0% {
+            max-height: 120vh;
+        }
+        100% {
+            max-height: 500px;
+        }
+    }
+    .retract {
+        max-height: 500px;
+    }
+    .explainerTop {
+        max-height: 500px;
+    }
+    .explainerWrap h2, .reavealed h2 {
+        font-size: 4rem;
+    }
+    .explainerText p {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 720px) {
+    html[data-theme="light"] .explainerWrap {
+        border-top: none;
+        background-color:rgb(233, 232, 232);
+        border-bottom: none;
+    }
+
+    .toggleDiv {
+        background-image: linear-gradient(rgba(233, 232, 232, 0),rgba(233, 232, 232, 0.8) 15%, rgba(233, 232, 232, 1) 75%);
+    }
+
+    .explainerWrap {
+        padding: 10% 10% 150px 10%;
+    }
+
+    .explainerText p {
+        font-size: calc(0.7rem + 1.5vw)
+    }
+}
+
+@media (max-width: 360px) {
+  
+}
+
+html[data-theme="dark"] .explainerWrap {
+    background-color: var(--ifm-background-color)
+}
+
+html[data-theme="dark"] .toggleDiv {
+    background-image: linear-gradient(rgba(24, 25, 26, 0), rgba(24, 25, 26, 0.8) 15%, rgba(24, 25, 26, 1) 75%);
+}

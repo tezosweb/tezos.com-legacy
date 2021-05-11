@@ -9,24 +9,15 @@ import Button from '../components/Button';
 import styles from './developer-portal.module.css';
 import Translate from '@docusaurus/Translate';
 
-// MDX Locale-specific Imports
-import DevPortalMDX from 'docs/developer-portal.mdx';
-import PLDevPortal from 'docs/pl/developer-portal.mdx';
-
-const MDXImports = {
-  devPortal: {
-    '/': (<DevPortalMDX />),
-    '/pl/': (<PLDevPortal />)
-  },
-}
-
 function DeveloperPortal() {
-    const context = useDocusaurusContext();
-    const {siteConfig = {}} = context;
+    const {siteConfig, codeTranslations} = useDocusaurusContext();
+
+    const DevPortal = require(`../../docs${siteConfig.baseUrl}developer-portal.mdx`).default;
+
     return (
       <Layout
-        title={'Tezos Developer Portal'}
-        description="Welcome to the Tezos Developer Portal. Explore and find the tools you need to get started building on Tezos right now.">
+        title={codeTranslations["Tezos Developer Portal"]}
+        description={codeTranslations["Dev Portal Meta"]}>
          <DevPortalHeader 
             title={<Translate>Tezos Developer Portal</Translate>}
             tagline={<Translate>Developer Support Channels:</Translate>}
@@ -38,7 +29,7 @@ function DeveloperPortal() {
             />
         <main>
             <div className={clsx('container', styles.mdxContainer)}>
-                {MDXImports.devPortal[siteConfig.baseUrl]}
+                <DevPortal />
             </div>
         </main>
       </Layout>

@@ -4,7 +4,7 @@ import clsx from 'clsx'
 import Button from 'components/Button'
 import styles from './styles.module.css'
 
-function LegalModal({ legalCopy, buttonLabel }) {
+function LegalModal({ legalCopy, buttonLabel, signUpCampaign, campLegal }) {
 
     const { openModal } = useContext(ModalContext)
 
@@ -33,18 +33,19 @@ function LegalModal({ legalCopy, buttonLabel }) {
                     <div className={clsx(styles.modal, state.open && styles.modalOpen)}>
                         <div className={styles.modalWrap}>
                             <button 
-                                className={styles.closeButton}
+                                className={clsx(styles.closeButton, signUpCampaign && styles.closeCampaign)}
                                 onClick={(e) => {
                                     openModal({ open: false })
                                     e.preventDefault()
                                 }}>
                                     close
                             </button>
-                            <p>{legalCopy}</p>
+                            <p className={clsx(styles.legalText, signUpCampaign && styles.campaignCopy)}>{campLegal ? campLegal : legalCopy}</p>
                             <div className={styles.buttonWrap}>
                                 <Button 
                                     href={state.link}
                                     text={buttonLabel}
+                                    signUpCampaign={signUpCampaign}
                                     closeModal={() => openModal({ open: false })} />
                             </div>
                         </div>

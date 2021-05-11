@@ -1,10 +1,10 @@
 {
   "link.title.Follow Tezos:": {
-    "message": "Follow Tezos:",
+    "message": "Suivre Tezos :",
     "description": "The title of the footer links column with title=Follow Tezos: in the footer"
   },
   "link.title.Sign Up For The Tezos Newsletter:": {
-    "message": "Sign Up For The Tezos Newsletter:",
+    "message": "S’abonner au bulletin Tezos :",
     "description": "The title of the footer links column with title=Sign Up For The Tezos Newsletter: in the footer"
   },
   "link.item.label.Twitter": {
@@ -40,19 +40,19 @@
     "description": "The label of footer link with label=Discord linking to https://discord.com/invite/udZwhQn"
   },
   "link.item.label.Email": {
-    "message": "Email",
+    "message": "Adresse mail",
     "description": "The label of footer link with label=Email linking to placeholder"
   },
   "link.item.label.Submit": {
-    "message": "Submit",
+    "message": "Valider",
     "description": "The label of footer link with label=Submit linking to submit"
   },
   "link.item.label.Thank you for subscribing!": {
-    "message": "Thank you for subscribing!",
+    "message": "Merci de vous être abonné !",
     "description": "The label of footer link with label=Thank you for subscribing! linking to success"
   },
   "link.item.label.This email address is already subscribed!": {
-    "message": "This email address is already subscribed!",
+    "message": "Cette adresse est déjà abonnée.",
     "description": "The label of footer link with label=This email address is already subscribed! linking to duplicate"
   }
 }

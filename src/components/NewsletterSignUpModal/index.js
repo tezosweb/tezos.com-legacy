@@ -50,8 +50,10 @@ function EmailForm({
     )
 }
 
-function onSubscribe(email, setComplete) {
-    addToMailchimp(email, { 'group[5][1]': '1' })
+function onSubscribe(email, setComplete, campaign) {
+    const fields = { 'group[5][1]': '1' };
+    if (campaign) fields['CAMPAIGN'] = campaign;
+    addToMailchimp(email, fields)
         .then((_data) => setComplete(true))
         .catch((err) => console.log('error', err))
 }
@@ -67,7 +69,8 @@ function ModalContent(props) {
         button,
         thankYou,
         updateText,
-        updateLinkText } = props;
+        updateLinkText,
+        signUpCampaign } = props;
 
     useEffect(() => {
         if (props.open) {
@@ -107,7 +110,7 @@ function ModalContent(props) {
             description={description}
             placeholder={placeholder}
             button={button}
-            onSubmit={() => onSubscribe(email, setComplete)}
+            onSubmit={() => onSubscribe(email, setComplete, signUpCampaign)}
         />
     )
 }
@@ -118,7 +121,8 @@ function NewsletterSignUpModal({ title,
     button,
     thankYou,
     updateText,
-    updateLinkText}) {
+    updateLinkText,
+    signUpCampaign}) {
 
     const { openModal } = useContext(ModalContext)
 
@@ -165,7 +169,8 @@ function NewsletterSignUpModal({ title,
                                         button={button}
                                         thankYou={thankYou}
                                         updateText={updateText}
-                                        updateLinkText={updateLinkText}/>
+                                        updateLinkText={updateLinkText}
+                                        signUpCampaign={signUpCampaign}/>
                         </div>
                         </div>
                     </>

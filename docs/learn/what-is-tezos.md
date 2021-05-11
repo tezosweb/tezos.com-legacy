@@ -35,7 +35,7 @@ In PoS, a security deposit is required to participate in the consensus process a
 
 ## Resources
 
- - [Tezos White Paper](../../static/whitepaper.pdf)
+ - [Tezos White Paper](https://tezos.com/whitepaper.pdf)
  - [Tezos Use Cases](https://wiki.tezosagora.org/learn/uses-of-tezos)
  - [Tezos Consensus Algorithm](https://wiki.tezosagora.org/learn/baking/proofofstake/consensus)
- - [Tezos Position Paper](../../static/position-paper.pdf)
+ - [Tezos Position Paper](https://tezos.com/position-paper.pdf)

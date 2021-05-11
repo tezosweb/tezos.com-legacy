@@ -27,14 +27,17 @@ function validEmail(email) {
     return /\S+@\S+\.\S+/.test(email)
 }
 
-function formSubmit(e, email, setState, setEmail, success) {
+function formSubmit(e, email, setState, setEmail, success, signUpCampaign) {
     e.preventDefault()
 
     if (!validEmail(email)) {
         return
     }
 
-    addToMailchimp(email)
+    const fields = { 'group[5][1]': '1' };
+    if (signUpCampaign) fields['CAMPAIGN'] = signUpCampaign;
+
+    addToMailchimp(email, fields)
         .then((data) => {
 
             if (data) {
@@ -56,7 +59,7 @@ function formSubmit(e, email, setState, setEmail, success) {
         .catch(err => console.error(err))
 }
 
-function EmailSignUp({ label, placeholder, buttonLabel, devPortal, success  }) {
+function EmailSignUp({ label, placeholder, buttonLabel, devPortal, success, signUpCampaign }) {
     const [ email, setEmail ] = useState('')
     const [ state, setState ] = useState({ status: 'ready', message: '' })
     const { codeTranslations } = useDocusaurusContext();
@@ -66,7 +69,7 @@ function EmailSignUp({ label, placeholder, buttonLabel, devPortal, success  }) {
     return (
         <form
             className={styles.form}
-            onSubmit={(e) => formSubmit(e, email, setState, setEmail, success )}
+            onSubmit={(e) => formSubmit(e, email, setState, setEmail, success, signUpCampaign )}
             id={`newsletter-form-${devPortal ? '2' : '1'}`}
         >
             <h3>
