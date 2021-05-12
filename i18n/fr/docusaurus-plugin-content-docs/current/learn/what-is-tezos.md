@@ -6,7 +6,7 @@ sidebar_label: Qu’est-ce que Tezos ?
 
 ## Principes fondamentaux
 
-Tezos est une plate-forme open source d’actifs et d’applications capable d’évolution en se mettant elle-même à niveau. Les parties prenantes régissent les mises à niveau du protocole de base, dont les mises à niveau du processus d’amendement.
+Tezos est une plateforme open source d’actifs et d’applications capable d’évolution en se mettant elle-même à niveau. Les parties prenantes régissent les mises à niveau du protocole de base, dont les mises à niveau du processus d’amendement.
 
 ### Auto-amendement
 
@@ -22,7 +22,7 @@ Les amendements proposés acceptés par les parties prenantes peuvent incorporer
 
 ### Contrats intelligents et vérification formelle
 
-Tezos met à disposition une plate-forme permettant la création de contrats intelligents et le développement d’applications décentralisées que des tierces parties ne peuvent ni censurer, ni fermer. De plus, Tezos facilite la vérification formelle, une technique qui améliore la sécurité en prouvant mathématiquement les propriétés de programmes comme les contrats intelligents. Cette technique, si elle est utilisée correctement, peut aider à éviter les bogues qui peuvent s’avérer coûteux, ainsi que les controverses qui en résultent.
+Tezos met à disposition une plateforme permettant la création de contrats intelligents et le développement d’applications décentralisées que des tierces parties ne peuvent ni censurer, ni fermer. De plus, Tezos facilite la vérification formelle, une technique qui améliore la sécurité en prouvant mathématiquement les propriétés de programmes comme les contrats intelligents. Cette technique, si elle est utilisée correctement, peut aider à éviter les bogues qui peuvent s’avérer coûteux, ainsi que les controverses qui en résultent.
 
 ### Preuve d’enjeu (PoS)
 

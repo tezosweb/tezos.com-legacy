@@ -40,7 +40,7 @@
    };
  }
  
- function Navbar(){
+ function Navbar({ campaign }){
    const {
      navbar: {items, hideOnScroll, style},
      colorMode: {disableSwitch: disableColorModeSwitch},
@@ -109,9 +109,12 @@
          </div>
          <div className="navbar__items navbar__items--right">
 
-            {rightItems.map((item, i) => (
+            {rightItems.map((item, i) => {
+              if (item.type === 'localeDropdown' && campaign) return;
+              return (
                 item.href !=='email' && <NavbarItem {...item} key={i} />
-              ))}
+              )
+            })}
 
               {rightItems.map((item, i) => (
                 item.href === 'email' && <SignUpBtn text={item.label} key={i} header />

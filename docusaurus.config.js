@@ -58,10 +58,10 @@ module.exports = {
           label: 'Developer Portal',
           position: 'left'
         },
-        /* {
+        {
           type: 'localeDropdown',
           position: 'right'
-        }, */
+        },
         {
           href: 'https://github.com/tqtezos/tezos.com',
           label: 'Upgrade Me On GitHub!',

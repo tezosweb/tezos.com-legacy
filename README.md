@@ -31,17 +31,17 @@ i18n/<locale>
 
 The ```.md```, ```.mdx``` and ```.json``` files therein contain all page content.
 
-At the moment, the job listings and news updates do not support localization, given the frequency of updates to these sections (see below).
+The Jobs and Tezos Updates sections have a different workflow: see below.
 
 ## Update Jobs and Tezos Updates sections
 
-Job listings and news updates are obtained from the Marketing department in Google Sheets. These are downloaded as `Tezos Job Listings - Sheet1.tsv` and `Tezos Updates - Sheet1.tsv`, respectively. Once updated files have been added to `src/data`, from the command line:
+Job listings and news updates are obtained from the Marketing department in Google Sheets. These are downloaded as `jobs-<locale>.tsv` and `updates-<locale>.tsv`. Once updated files have been added to `src/data/tsv/jobs` and `src/data/tsv/updates`, respectively, from the command line:
 
 ```console
 npm run updates
 ```
 
-This parses the `.tsv` files into `.json`, which are then imported into the appropriate modules. To update these separately, from the command line: 
+This parses the `.tsv` files into `.json` with the same name, located at `src/data/jobs` and `src/data/updates`, which are then imported into the appropriate modules. To update these separately, from the command line: 
 
 ```console
 npm run update-jobs

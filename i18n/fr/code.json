@@ -54,7 +54,7 @@
     "message": "Bienvenue dans le portail développeurs Tezos. Découvrez les outils qui vont vous permettre dès à présent de développer sur Tezos."
   },
   "Home Meta": {
-    "message": "Tezos est une plate-forme open source d’actifs et d’applications. Elle est soutenue par une communauté mondiale de validateurs, chercheurs et développeurs."
+    "message": "Tezos est une plateforme open source d’actifs et d’applications. Elle est soutenue par une communauté mondiale de validateurs, chercheurs et développeurs."
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
     "message": "Fermer",

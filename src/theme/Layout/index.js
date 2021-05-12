@@ -34,7 +34,7 @@ function Layout(props) {
 
       <AnnouncementBar />
 
-      <Navbar />
+      <Navbar campaign={signUpCampaign} />
 
       <div
         className={clsx(
