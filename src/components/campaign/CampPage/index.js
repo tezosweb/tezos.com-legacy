@@ -49,8 +49,9 @@ export default function Campaign({ campaign }) {
     } */
 
     useEffect(() => {
-        let id = window.location.href.split('#')[1]
-        setHash(id ? id : '')
+        let id = window.location.href.split('#')[1];
+        const story = id ? id.split('?')[0] : '';
+        setHash(story)
     })
 
 
