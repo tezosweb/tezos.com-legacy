@@ -13,16 +13,14 @@ import Footer from '@theme/Footer';
 import LayoutProviders from '@theme/LayoutProviders';
 import LayoutHead from '@theme/LayoutHead';
 import useKeyboardNavigation from '@theme/hooks/useKeyboardNavigation';
+import {ThemeClassNames} from '@docusaurus/theme-common';
 import './styles.css';
 
 function Layout(props) {
-  const {
-    children,
-    noFooter,
-    wrapperClassName
-  } = props;
+  const {children, noFooter, wrapperClassName, pageClassName} = props;
   useKeyboardNavigation();
-  return <LayoutProviders>
+  return (
+    <LayoutProviders>
       <LayoutHead {...props} />
 
       <SkipToContent />
@@ -31,10 +29,18 @@ function Layout(props) {
 
       <Navbar />
 
-      <div className={clsx('main-wrapper', wrapperClassName)}>{children}</div>
+      <div
+        className={clsx(
+          ThemeClassNames.wrapper.main,
+          wrapperClassName,
+          pageClassName,
+        )}>
+        {children}
+      </div>
 
       {!noFooter && <Footer />}
-    </LayoutProviders>;
+    </LayoutProviders>
+  );
 }
 
 export default Layout;
