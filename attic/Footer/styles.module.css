@@ -5,12 +5,11 @@
  * LICENSE file in the root directory of this source tree.
  */
 
- .footerLogoLink {
-    opacity: 0.5;
-    transition: opacity var(--ifm-transition-fast) var(--ifm-transition-timing-default);
-  }
-  
-  .footerLogoLink:hover {
-    opacity: 1;
-  }
-  
+.footerLogoLink {
+  opacity: 0.5;
+  transition: opacity var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+}
+
+.footerLogoLink:hover {
+  opacity: 1;
+}
