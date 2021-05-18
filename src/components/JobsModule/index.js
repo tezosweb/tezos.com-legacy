@@ -26,7 +26,8 @@ function parseHeading(cat) {
 const JobsModule = ({ dev, coms, ops }) => {
     const {siteConfig} = useDocusaurusContext();
 
-    const jobs = require(`../../data/jobs/jobs-${siteConfig.baseUrl === '/' ? 'en' : siteConfig.baseUrl.split('/')[1]}.json`)
+    let jobs = require(`../../data/jobs/jobs-${siteConfig.baseUrl === '/' ? 'en' : siteConfig.baseUrl.split('/')[1]}.json`)
+    if (!jobs) jobs = require('../../data/jobs/jobs-en.json');
 
     return (
         <div className={clsx('container', styles.jobsContainer)}>
