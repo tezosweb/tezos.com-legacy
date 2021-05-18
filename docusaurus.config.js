@@ -7,7 +7,7 @@ module.exports = {
   baseUrl: '/',
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'fr', 'zh', 'hi', 'es', 'ar', 'ru', 'pt', 'ja', 'tr'],
+    locales: ['en', 'fr', 'zh-CN', 'hi', 'es', 'ar', 'ru', 'pt', 'ja', 'tr'],
     localeConfigs: {
       en: {
         label: 'English',
@@ -15,7 +15,7 @@ module.exports = {
       fr : {
         label: 'Français'
       },
-      zh: {
+      "zh-CN": {
         label: '普通话'
       },
       hi: {
