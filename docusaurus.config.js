@@ -31,7 +31,7 @@ module.exports = {
         label: 'русский'
       },
       pt: {
-        label: 'português'
+        label: 'Português'
       },
       ja: {
         label : '日本語'
