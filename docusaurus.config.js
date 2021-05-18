@@ -14,31 +14,7 @@ module.exports = {
       },
       fr : {
         label: 'Français'
-      },
-/*       "zh-CN": {
-        label: '普通话'
-      },
-      hi: {
-        label: 'हिंदी'
-      },
-      es : {
-        label: 'Español'
-      },
-      ar: {
-        label: 'عربى'
-      },
-      ru : {
-        label: 'русский'
-      },
-      pt: {
-        label: 'Português'
-      },
-      ja: {
-        label : '日本語'
-      },
-      tr : {
-        label: 'Türkçe'
-      } */
+      }
     },
   },
   onBrokenLinks: 'throw',
