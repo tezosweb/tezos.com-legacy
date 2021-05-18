@@ -1,0 +1,54 @@
+---
+id: welcome
+title: Homepage Welcome 
+---
+
+import Button from 'components/Button';
+import Wrapper from 'components/Wrapper';
+import Hero from 'components/Hero';
+import BulletPtSection from 'components/BulletPtSection';
+import colors from 'src/css/colors.js';
+
+
+<Hero
+    heading='Security focused. Upgradable. Built to last.'
+    subheading='Tezos is an open-source platform for assets and applications backed by a global community of validators, researchers, and builders.'
+    img='img/tez.svg'
+    buttonOne={{
+        text: 'Access Developer Portal',
+        href: '/developer-portal'
+    }}
+    buttonTwo={{
+        text: 'Get Started',
+        href: 'docs/learn/get-started'
+    }}
+/>
+
+<Wrapper bg={colors.lightGrey} padded center id="key-barriers">
+
+## Tezos addresses key barriers facing blockchain adoption to date: smart contract safety, long-term upgradability, and open participation.
+
+</Wrapper>
+
+<BulletPtSection
+    bulletPts={[
+        {
+            heading: 'Secure, Institutional Grade Smart Contracts',
+            text: 'Tezos is designed to provide the safety and code correctness required for assets and other high value use cases. Its native smart contract language, Michelson, facilitates formal verification, a methodology commonly used in mission-critical environments such as the aerospace, nuclear, and semiconductor industries.',
+            img: '/img/icons/smartcontract.svg',
+            alt: 'Smart Contracts'
+        },
+        {
+            heading: 'Upgradable to the State of the Art',
+            text: `Tezos’ modular architecture and formal upgrade mechanism allow the network to propose and adopt new technological innovations smoothly as they emerge. These aspects, combined with Tezos’ on-chain invoicing mechanism, enable the protocol to remain the state-of-the-art long into the future — without sacrificing community consensus.`,
+            img: '/img/icons/future.svg',
+            alt: 'Upgradable'   
+        },
+        {
+            heading: 'Open Participation and Incentive Alignment',
+            text: 'In Tezos, all stakeholders may participate in network upgrades by evaluating, proposing, or approving amendments. Unlike in Proof-of-Work and other Proof-of-Stake networks, all stakeholders can help to secure the network (via baking or delegating), and avoid being diluted by inflation.',
+            img: '/img/icons/network.svg',
+            alt: 'State of the Art'   
+        }
+    ]}
+/>

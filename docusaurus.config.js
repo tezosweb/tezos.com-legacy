@@ -14,7 +14,7 @@ module.exports = {
       },
       fr : {
         label: 'Français'
-      },
+      }
     },
   },
   onBrokenLinks: 'throw',

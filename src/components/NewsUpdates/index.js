@@ -7,7 +7,9 @@ const NewsUpdates = ({ category, img, translatedTitle }) => {
 
     const {siteConfig} = useDocusaurusContext();
 
-    const updates = require(`../../data/updates/updates-${siteConfig.baseUrl === '/' ? 'en' : siteConfig.baseUrl.split('/')[1]}.json`)
+    let updates;
+    if (['/', 'fr'].includes(siteConfig.baseUrl)) updates = require(`../../data/updates/updates-${siteConfig.baseUrl === '/' ? 'en' : siteConfig.baseUrl.split('/')[1]}.json`)
+    else updates = require('../../data/updates/updates-en.json');
 
     return (
         <div className={styles.updateContainer}>
