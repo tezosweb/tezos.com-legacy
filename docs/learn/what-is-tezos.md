@@ -1,7 +1,7 @@
 ---
 id: what-is-tezos
 title: What Is Tezos?
-sidebar_label: What Is Tezos?
+sidebar_label: Tezos是什么?
 ---
 
 ## 基础
