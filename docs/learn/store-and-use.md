@@ -1,7 +1,7 @@
 ---
 id: store-and-use
-title: Store & Use
-sidebar_label: Store & Use
+title: 存储与使用
+sidebar_label: 存储与使用
 ---
 
 ## 基础知识
