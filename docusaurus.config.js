@@ -17,7 +17,7 @@ module.exports = {
       }
     },
   },
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/tez.svg',
   organizationName: 'tqtezos', // Usually your GitHub org/user name.
