@@ -77,6 +77,11 @@ html[data-theme='dark'] .header-github-link:before {
   margin-left: 0;
 }
 
+/* Weird Navbar Issue Fix */
+.navbar--fixed-top {
+  z-index: 2;
+}
+
 /* Fonts */
 
 h1,
