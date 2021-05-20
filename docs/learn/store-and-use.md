@@ -1,7 +1,7 @@
 ---
 id: store-and-use
-title: 存储与使用
-sidebar_label: 存储与使用
+title: token的存储与使用
+sidebar_label: token的存储与使用
 ---
 
 ## 基础知识
