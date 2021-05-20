@@ -155,9 +155,12 @@
          <div className="navbar-sidebar__items">
            <div className="menu">
              <ul className="menu__list">
-             {items.map((item, i) => (
-                item.href !== 'email' && <NavbarItem mobile {...item} onClick={hideSidebar} key={i} />
-              ))}
+             {items.map((item, i) => {
+               if (item.type === 'localeDropdown' && campaign) return;
+                return (
+                  item.href !== 'email' && <NavbarItem mobile {...item} onClick={hideSidebar} key={i} />
+                )
+             })}
 
               {items.map((item, i) => (
                 item.href === 'email' && <SignUpBtn text={item.label} key={i}/>

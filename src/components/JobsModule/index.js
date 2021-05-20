@@ -27,7 +27,7 @@ const JobsModule = ({ dev, coms, ops }) => {
     const {siteConfig} = useDocusaurusContext();
 
     let jobs;
-    if (['/', 'fr'].includes(siteConfig.baseUrl)) jobs = require(`../../data/jobs/jobs-${siteConfig.baseUrl === '/' ? 'en' : siteConfig.baseUrl.split('/')[1]}.json`)
+    if (['/', '/fr/'].includes(siteConfig.baseUrl)) jobs = require(`../../data/jobs/jobs-${siteConfig.baseUrl === '/' ? 'en' : siteConfig.baseUrl.split('/')[1]}.json`)
     else jobs = require('../../data/jobs/jobs-en.json');
 
     return (
