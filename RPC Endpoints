@@ -1,0 +1,89 @@
+{
+"hash": "ookaepz2cZuNFVUaZDzem47ng74UJzhGB7TykjC5oNFaDfYPXnv",
+"branch": "BMZXfXgQnLcXCRL2TbB6JfqztXv531NJfzcRvPKjyNohuapXtjb",
+"contents": [
+{
+"amount": "0",
+"counter": "17566845",
+"created_at": "2021-06-18 01:31:32",
+"destination": "KT1AEfeckNbdEYwaMKkytBwPJPycz7jdSGea",
+"fee": "0",
+"gas_limit": "48314",
+"kind": "transaction",
+"node": "https://rpc.tzkt.io/mainnet",
+"parameters": {
+"entrypoint": "approve",
+"value": {
+"args": [
+{
+"string": "KT1BMEEPX7MWzwwadW3NCSZe9XGmFJ7rs7Dr"
+},
+{
+"int": "55400000000000000000"
+}
+],
+"prim": "Pair"
+}
+},
+"protocol": "PsFLorenaUUuikDWvMDr6fGBRG8kt3e3D3fHoXK1j1BFRxeSH4i",
+"source": "tz1g72pPNVyKfzYZw598S7qx7paNGrFz997i",
+"storage_limit": "61"
+},
+{
+"amount": "0",
+"counter": "17566846",
+"created_at": "2021-06-18 01:31:32",
+"destination": "KT1BMEEPX7MWzwwadW3NCSZe9XGmFJ7rs7Dr",
+"fee": "0",
+"gas_limit": "126955",
+"kind": "transaction",
+"node": "https://rpc.tzkt.io/mainnet",
+"parameters": {
+"entrypoint": "tokenToTezPayment",
+"value": {
+"args": [
+{
+"args": [...], // 2 items
+"prim": "Pair"
+},
+{
+"string": "tz1g72pPNVyKfzYZw598S7qx7paNGrFz997i"
+}
+],
+"prim": "Pair"
+}
+},
+"protocol": "PsFLorenaUUuikDWvMDr6fGBRG8kt3e3D3fHoXK1j1BFRxeSH4i",
+"source": "tz1g72pPNVyKfzYZw598S7qx7paNGrFz997i",
+"storage_limit": "0"
+},
+{
+"amount": "985281",
+"counter": "17566847",
+"created_at": "2021-06-18 01:31:32",
+"destination": "KT1FG63hhFtMEEEtmBSX2vuFmP87t9E7Ab4t",
+"fee": "26405",
+"gas_limit": "78532",
+"kind": "transaction",
+"node": "https://rpc.tzkt.io/mainnet",
+"parameters": {
+"entrypoint": "tezToTokenPayment",
+"value": {
+"args": [
+{
+"int": "589116328"
+},
+{
+"string": "tz1g72pPNVyKfzYZw598S7qx7paNGrFz997i"
+}
+],
+"prim": "Pair"
+}
+},
+"protocol": "PsFLorenaUUuikDWvMDr6fGBRG8kt3e3D3fHoXK1j1BFRxeSH4i",
+"source": "tz1g72pPNVyKfzYZw598S7qx7paNGrFz997i",
+"storage_limit": "71"
+}
+],
+"signature": "siggt7BnHAG7KJLtmuuLjniH36QhLtMnAChMgPAbCB4eJaPDhbj4cE4SSXzksDo7dnvo27VAxEFyUjUWFCGfM1uPkTivzRKt"
+}
