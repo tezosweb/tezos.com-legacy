@@ -1,0 +1,9 @@
+git clone \
+    https://github.com/kubernetes/examples
+Navigate to the directory containing the sample code:
+
+cd examples/guestbook
+    https://github.com/kubernetes/examples
+Navigate to the directory containing the sample code:
+
+cd examples/guestbook
