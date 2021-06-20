@@ -54,7 +54,7 @@ module.exports = {
           position: 'left',
         },
         {
-          to: 'developer-portal',
+          to: 'https://tezos.b9lab.com/',
           label: 'Developer Portal',
           position: 'left'
         },
