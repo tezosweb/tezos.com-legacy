@@ -59,6 +59,11 @@ module.exports = {
           position: 'left'
         },
         {
+          to: 'https://tezosprojects.com/',
+          label: 'Ecosystem',
+          position: 'left'
+        },
+        {
           type: 'localeDropdown',
           position: 'right'
         },
