@@ -1,7 +1,8 @@
 name: Jekyll site CI
 
-on:
-  push:
+on:CoreValExtreme
+/
+tezos.com  push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
