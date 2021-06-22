@@ -1,0 +1,1 @@
+tezos-client --endpoint http://localhost:20000 config update
