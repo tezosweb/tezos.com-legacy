@@ -1,4 +1,6 @@
-# New Tezos.com
+# Legacy Tezos.com
+
+> **_NOTE:_** [DEPRECATED] The [Tezos.com](https://tezos.com) website has been redesigned and redeployed, and therefore this repository has been deprecated and archived. Please visit [Tezos.com](https://tezos.com) to see the new look + feel and reach out if there are any suggestions.
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 
